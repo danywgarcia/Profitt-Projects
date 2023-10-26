@@ -1,0 +1,946 @@
+<style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+  }
+
+  div.page {
+    width: 900px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-size: 25px 25px;
+    background-image:
+    linear-gradient(to right, white 1px, transparent 1px),
+    linear-gradient(to bottom, white 1px, transparent 1px);
+  }
+
+.toc_container {
+  background: solid white;
+  border: 1px solid white;
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px
+  margin-left: auto; 
+  margin-right: auto;
+  width: 665pt;
+}
+
+.toc_title {
+font-family: Georgia, serif;
+color: #1fa040;
+font-style: normal;
+font-weight: bold;
+text-align: center; 
+}
+
+.toc_container li, .toc_container ul, .toc_container ul li{
+    list-style: outside none none !important;
+}
+
+#col-1,
+#col-2,
+#col-3,
+#col-4,
+#col-5,
+#col-6  
+.col
+  {
+  width: 100%;
+  height: 200px;
+  padding-bottom:  20pt;
+  margin: 0;
+  margin-bottom:20px;
+  padding-top: 0px;
+}
+  #col-1 {
+  height: 200px;
+  padding-bottom:  0pt;
+  margin: 0;
+  float: left;
+  background: white;
+}
+#col-2 {
+  height: 200px;
+  padding-bottom:  0pt;
+  margin: 0;
+  float: left;
+  background: white;
+}
+#col-3 {
+  height: 200px;
+  padding-bottom:  0pt;
+  margin: 0;
+  float: left;
+  background: white;
+}
+  
+  h1 {
+    color: #243f60;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-size: 28pt;
+  }
+
+  h2 {
+    color: #243f60;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-size: 24pt;
+  }
+
+  h3 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 20pt;
+  }
+
+  h4 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 18pt;
+  }
+
+  h5 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 16pt;
+  }
+  
+  h6 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 14pt;
+  }
+
+  .p,
+  p {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+	  text-indent: 0pt;
+	  text-align: left;
+	  line-height: 125%;
+	  word-wrap: break-word;
+    padding-left: 0pt;
+    padding-right: 0pt;
+	  padding-top: 0pt;
+    margin: 0px;	
+	  margin-left: auto; 
+	  margin-right: auto;
+  }
+
+  .s1  {
+	color: black;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  padding-top: 0pt; 
+  padding-left: 0pt; 
+  text-indent: 0pt; 
+  line-height: 125%; 
+  word-wrap: break-word; 
+  text-align: justify; 
+  margin-left: auto; 
+  margin-right: auto;
+  }
+
+  .s2 {
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt; 
+    padding-left: 0pt; 
+    text-indent: 0pt; 
+    line-height: 125%; 
+    word-wrap: break-word; 
+    text-align: left; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .s3 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  .s4 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s5 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s6 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s7 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s8 {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 14pt;
+  }
+
+  .s9 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 16pt;
+  }
+
+  .s10 {
+    color: black;
+    font-family: "Courier New", monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11pt;
+  }
+
+  .a {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 10.5pt;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l1 {
+    padding-left: 0pt;
+    counter-reset: c1 1;
+  }
+
+  #l1>li>*:first-child:before {
+    counter-increment: c1;
+    content: counter(c1, decimal)".";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-size: 12pt;
+    list-style-position: inside;
+    text-indent: 15pt;
+  }
+
+  #l1>li:first-child>*:first-child:before {
+    counter-increment: c1 0;
+  }
+
+  #l2 {
+    padding-left: 15pt;
+  }
+
+  #l2>li>*:first-child:before {
+    content: " ";
+    color: #2D2D2D;
+    font-family: Symbol, serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l3 {
+    padding-left: 0pt;
+    counter-reset: d1 1;
+  }
+
+  #l3>li>*:first-child:before {
+    counter-increment: d1;
+    content: counter(d1, upper-latin)". ";
+    color: #292929;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  #l3>li:first-child>*:first-child:before {
+    counter-increment: d1 0;
+  }
+
+  #l4 {
+    padding-left: 0pt;
+    counter-reset: e1 1;
+  }
+
+  #l4>li>*:first-child:before {
+    counter-increment: e1;
+    content: counter(e1, decimal)". ";
+    color: black;
+    list-style-position: inside;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-size: 11.5pt;
+  }
+
+  #l4>li:first-child>*:first-child:before {
+    counter-increment: e1 0;
+  }
+
+  #l5 {
+    padding-left: 0pt;
+    counter-reset: f1 1;
+  }
+
+  #l5>li>*:first-child:before {
+    counter-increment: f1;
+    content: counter(f1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l5>li:first-child>*:first-child:before {
+    counter-increment: f1 0;
+  }
+
+  #l6 {
+    padding-left: 0pt;
+    counter-reset: f2 1;
+  }
+
+  #l6>li>*:first-child:before {
+    counter-increment: f2;
+    content: counter(f2, lower-latin)". ";
+    color: #2D2D2D;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  #l6>li:first-child>*:first-child:before {
+    counter-increment: f2 0;
+  }
+
+  #l7 {
+    padding-left: 0pt;
+    counter-reset: g1 1;
+  }
+
+  #l7>li>*:first-child:before {
+    counter-increment: g1;
+    content: counter(g1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l7>li:first-child>*:first-child:before {
+    counter-increment: g1 0;
+  }
+
+  #l8 {
+    padding-left: 0pt;
+    counter-reset: h1 1;
+  }
+
+  #l8>li>*:first-child:before {
+    counter-increment: h1;
+    content: counter(h1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l8>li:first-child>*:first-child:before {
+    counter-increment: h1 0;
+  }
+
+  #l9 {
+    padding-left: 0pt;
+    counter-reset: i1 1;
+  }
+
+  #l9>li>*:first-child:before {
+    counter-increment: i1;
+    content: counter(i1, decimal)". ";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l9>li:first-child>*:first-child:before {
+    counter-increment: i1 0;
+  }
+
+  #l10 {
+padding-left: 0pt;
+}
+
+  #l10>>li>*:first-child:before {
+    content: " ";
+    color: #2D2D2D;
+    font-family: Symbol, serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l11 {
+    padding-left: 0pt;
+    counter-reset: k1 1;
+  }
+
+  #l11>li>*:first-child:before {
+    counter-increment: k1;
+    content: counter(k1, decimal)". ";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l11>li:first-child>*:first-child:before {
+    counter-increment: k1 0;
+  }
+
+#l12 {
+padding-left: 0pt;
+}
+
+#l12>li>*:first-child:before {
+content: " ";
+color: black;
+font-family: Symbol, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+  
+#l13 {
+padding-left: 0pt;
+}
+
+#l13>li>*:first-child:before {
+content: " ";
+color: black;
+font-family: Symbol, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l14 {
+padding-left: 0pt;
+}
+
+#l14>li>*:first-child:before {
+content: " ";
+color: black;
+font-family: Symbol, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+  
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: 50px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: 50px;
+}
+</style>
+<div class="page">
+<h1 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">CFPB Service Desk Guide:</h1>
+<h2 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">Xerox VersaLink C505 Quick Reference Guide</h2>
+<div id="toc_container">
+<h3 class="toc_title" style="padding-top: 20pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">Table of Contents</h3>
+<ul class="toc_list">
+<li>
+<p style="padding-top: 5pt; padding-left: 0pt; text-indent: 5pt; line-height: 135%; word-wrap: break-word; text-align: center; margin-left: auto; margin-right: auto;"><a href="#First_Point_Header">1 Printer Tour</a></p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 5pt; line-height: 135%; word-wrap: break-word; text-align: center; margin-left: auto; margin-right: auto;"><a href="#First_Point_Header">2 Control Panel</a>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 10pt; text-indent: 5pt; line-height: 135%; word-wrap: break-word; text-align: center; margin-left: auto; margin-right: auto;"><a href="#First_Point_Header">3 Copy Overview</a>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 15pt; text-indent: 5pt; line-height: 135%; word-wrap: break-word; text-align: center; margin-left: auto; margin-right: auto;"><a href="#First_Point_Header">4 Email Overview</a>
+</li>
+</ul>
+</div>
+<h2 style="padding-top: 10pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #1fa040;">Printer Tour</h2>
+<h3 style="padding-top: 0pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #243f60;">Front View</h3>
+<p style="padding-top: 10pt; padding-bottom: 20pt; padding-left: 50pt; margin-left: auto; margin-right: auto; width: 50%; float: right;"><img src="/sys_attachment.do?sys_id=74c2e2f91b7c31104ae12f82f54bcbda" width="245" height="236" /></p>
+<table style="border-collapse: collapse; margin-left: auto; margin-right: auto;" cellspacing="0">
+<tbody>
+<tr style="height: 19pt;">
+<td style="width: 10pt; border-width: 1pt; border-style: solid;" bgcolor="#00AF50">
+<p class="s2" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center; color: white;">ITEM</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;" bgcolor="#00AF50">
+<p class="s2" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; line-height: 12pt; text-align: center; color: white;">NAME</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">1</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; text-align: center;">Tray 2, Optional 550-Sheet Feeder</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">2</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 84pt; text-indent: 0pt; text-align: center;">Tray 1</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">3</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; line-height: 12pt; text-align: center;">Bypass Tray</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">4</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; text-align: center;">Front Door</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">5</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 84pt; text-indent: 0pt; text-align: center;">Card Reader Bay</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">6</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; line-height: 12pt; text-align: center;">USB Memory Port</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">7</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 84pt; text-indent: 0pt; line-height: 12pt; text-align: center;">Status LED</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">8</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 84pt; text-indent: 0pt; text-align: center;">NFC Area</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">9</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; text-align: center;">Touch Screen</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 31pt; padding-right: 30pt; text-indent: 0pt; line-height: 12pt; text-align: center;">10</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 64pt; padding-right: 64pt; text-indent: 0pt; line-height: 12pt; text-align: center;">Duplex Automatic Document Feeder</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 32pt; padding-right: 30pt; text-indent: 0pt; text-align: center;">11</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 84pt; text-indent: 0pt; text-align: center;">Output Tray</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 32pt; padding-right: 30pt; text-indent: 0pt; text-align: center;">12</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; text-align: center;">Output Tray Extension</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 20pt; padding-right: 20pt; text-indent: 0pt; line-height: 12pt; text-align: center;">13</p>
+</td>
+<td style="width: 349pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; line-height: 12pt; text-align: center;">Right-Side Door</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 style="padding-top: 20pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #1fa040;">Control Panel</h2>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 0pt; line-height: 100%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">The control panel consists of a touch screen and buttons you press to control the functions available on the printer. The control panel:</p>
+<ol id="l1">
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Displays the current operating status of the printer.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Provides access to print, copy, and scan features.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Provides access to reference materials.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Provides access to Tools and Setup menus.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Prompts you to load paper, replace supplies, and clear jams.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Displays errors and warnings.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 15pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Provides the Power/Wake button used for powering on or powering off the printer. This button also <br /><span style="padding-top: 5pt; padding-left: 35pt; text-indent: 15pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> supports the power-saver modes, and blinks to indicate the power status of the printer.</span></p>
+<p style="padding-top: 10pt; padding-bottom: 20pt; padding-left: 50pt; margin-left: auto; margin-right: auto; width: 70%; float: right;"><img src="/sys_attachment.do?sys_id=0f7cd3fd1bb471104ae12f82f54bcbd6" width="336" height="213" /></p>
+</li>
+</ul>
+<table style="border-collapse: collapse; margin-left: auto; margin-right: auto; width: 90%; cellspacing="0">
+<tbody>
+<tr style="height: 19pt">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;" bgcolor="#00AF50">
+<p class="s2" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 12pt; text-align: center; color: white;">ITEM</p>
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid;" bgcolor="#00AF50">
+<p class="s2" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; color: white;">NAME</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid;" bgcolor="#00AF50">
+<p class="s2" style="padding-left: 84pt; padding-right: 83pt; text-indent: 0pt; line-height: 12pt; text-align: center; color: white;">DESCRIPTION</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 12pt; text-align: center;">1</p
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">Touch Screen Display</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-left: 4pt; padding-right: 4pt; text-indent: 0pt; line-height: 125%; text-align: left;">This area of the screen displays information and provides access to printer functions and applications.</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 12pt; text-align: center;">2</p>
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">Administrator Logon</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-left: 4pt; padding-right: 4pt; text-indent: 0pt; line-height: 125%; text-align: left;">This is the location where the system administrator logs in using the system administrator password.</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 12pt; text-align: center;">3</p>
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">Power/Wake</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-left: 4pt; padding-right: 4pt; text-indent: 0pt; line-height: 12pt; text-align: left;">This button serves several power-related functions.</p>
+<ul id="l12">
+<li>
+<p class="s3" style="padding-top: 1pt; padding-left: 15pt; text-indent: 0pt; text-align: left; font-style: italic; margin-left: auto; margin-right: auto;">When the printer is off, this button powers on the printer.</p>
+</li>
+<li>
+<p class="s3" style="padding-top: 1pt; padding-left: 15pt; padding-right: 3pt; text-indent: 0pt; text-align: left; word-wrap: break-word; font-style: italic; margin-left: auto; margin-right: auto;">When the printer is on, pressing this button displays a menu on the<br /><span style="padding-top: 5pt; padding-left: 10pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> control panel. From this menu, you can choose to enter Sleep mode,<br /><span style="padding-top: 5pt; padding-left: 10pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> restart, or power off the printer.</span></span></p>
+</li>
+<li>
+<p class="s3" style="padding-top: 1pt; padding-left: 15pt; padding-right: 3pt; text-indent: 0pt; text-align: left; word-wrap: break-word; font-style: italic; margin-left: auto; margin-right: auto;">When the printer is on, but in a low-power or Sleep mode, pressing<br /><span style="padding-top: 5pt; padding-left: 10pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> this button wakes the printer.</span></p>
+</li>
+<li>
+<p class="s3" style="padding-top: 1pt; padding-left: 15pt; padding-right: 3pt; text-indent: 0pt; text-align: left; word-wrap: break-word; font-style: italic; margin-left: auto; margin-right: auto;">When the printer is powered on, holding this button for 5<br /><span style="padding-top: 5pt; padding-left: 10pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> seconds powers off the printer.</span></p>
+<p class="s3" style="padding-top: 10pt; padding-left: 4pt; padding-right: 4pt; text-indent: 0pt; line-height: 12pt; text-align: left;">This button also blinks to indicate the power status of the printer.</p>
+</li>
+<li>
+<p class="s3" style="padding-top: 1pt; padding-left: 15pt; padding-right: 3pt; text-indent: 0pt; text-align: left; word-wrap: break-word; font-style: italic; margin-left: auto; margin-right: auto;">When the light blinks slowly, the printer is in Low Power or Sleep<br /><span style="padding-top: 5pt; padding-left: 10pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> mode.</span></p>
+</li>
+<li>
+<p class="s3" style="padding-top: 1pt; padding-left: 15pt; padding-right: 3pt; text-indent: 0pt; text-align: l; word-wrap: break-word; font-style: italic; margin-left: auto; margin-right: auto;">When the light blinks fast, the printer is powering down, or exiting a<br /><span style="padding-top: 5pt; padding-left: 10pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> low- power mode.</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-top: 3pt; padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">4</p>
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 25pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">Home Button</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-left: 4pt; padding-right: 4pt; text-indent: 0pt; line-height: 12pt; text-align: left;">This button provides access to the Home menu for access to printer features.</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-top: 3pt; padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">5</p>
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 25pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">NFC Area</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-left: 4pt; padding-right: 4pt; text-indent: 0pt; line-height: 12pt; text-align: left;">Near Field Communication (NFC) is a technologythat enables devices to communicate when they are within 10 cm (4 in.) ofeach other. Use the NFC area to obtain a network interface or to establish a TCP/IP connection between your device and the printer.</p>
+</td>
+</tr>
+<tr style="height: 19pt;">
+<td style="width: 5pt; border-width: 1pt; border-style: solid;">
+<p class="s3" style="padding-top: 3pt; padding-left: 5pt; padding-right: 5pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">6</p>
+</td>
+<td style="width: 10pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 25pt; text-indent: 0pt; line-height: 94%; text-align: center; margin-left: auto; margin-right: auto;">Status LED</p>
+</td>
+<td style="width: 250pt; border-width: 1pt; border-style: solid; height: auto;">
+<p class="s3" style="padding-top: 3pt; padding-left: 10pt; text-indent: 0pt; text-align: left;">This light blinks blue or amber to indicate printer status.</p>
+<ul id="l12">
+<li>
+<p class="s3" style="padding-top: 2pt; padding-left: 25pt; text-indent: -15pt; text-align: left;">Blue</p>
+<ul id="l12">
+<li>
+<p class="s3" style="padding-top: 7pt; padding-left: 42pt; padding-right: 45pt; text-indent: -17pt; line-height: 94%; text-align: left;">Blinks once slowly for a Copy or Print job initiated at the control panel.</p>
+</li>
+<li>
+<p class="s3" style="padding-top: 5pt; padding-left: 42pt; text-indent: -17pt; text-align: left;">Blinks twice slowly for Fax or Print job received from the network.</p>
+</li>
+<li>
+<p class="s3" style="padding-top: 7pt; padding-left: 42pt; padding-right: 13pt; text-indent: -17pt; line-height: 94%; text-align: left;">Blinks fast while the printer is powering up, or to signal detection of a Wi-Fi Direct connection request.</p>
+</li>
+</ul>
+</li>
+<li>
+<p class="s3" style="padding-top: 6pt; padding-left: 25pt; text-indent: -15pt; text-align: left;">Amber</p>
+<ul id="l5">
+<li>
+<p class="s3" style="padding-top: 7pt; padding-left: 42pt; padding-right: 18pt; text-indent: -17pt; text-align: justify;">Blinks to indicate an error condition or warning that requires your attention. For example, an out-of-toner condition, a paper jam, or out of paper for the current job.</p>
+</li>
+<li>
+<p class="s3" style="padding-top: 7pt; padding-left: 42pt; padding-right: 19pt; text-indent: -17pt; line-height: 94%; text-align: justify;">The printer status LED also blinks to indicate a system error, which typically is associated with an error code.</p>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2 style="padding-top: 30pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #1fa040;"><a name="bookmark4"></a>Copy Overview<a name="bookmark5"></a></h2>
+<p style="padding-top: 5pt; padding-left: 0pt; text-indent: 0pt; line-height: 135%; display: table; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">To make a copy, the device scans your original documents and temporarily stores the images. The image print based on the options selected.</p>
+<h3 style="padding-top: 5pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #243f60;">To make a copy:</h3>
+<ol id="l4">
+<li>
+<p style="padding-top: 7pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">At the printer control panel, press the Home button.</p>
+</li>
+<li>
+<p style="padding-left: 33pt; text-indent: -16pt; text-align: left;">To clear previous App settings, touch Reset.</p>
+</li>
+<li>
+<p style="padding-left: 33pt; text-indent: -16pt; text-align: left;">Load your original documents.</p>
+<ul id="l12">
+<li>
+<p style="padding-top: 7pt; padding-left: 49pt; text-indent: -14pt; text-align: justify;">Use the documentglass forsingle pages orpaper that cannot be fed using the single-pass duplex automatic document feeder. Lift the document feeder, then place the original document face down in the upper-left corner of the document glass.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"></p>
+</li>
+<li>
+<p style="padding-top: 4pt; padding-left: 49pt; text-indent: -14pt; text-align: justify;">For single, multiple, or 2-sided pages, use the single-pass duplex automatic document feeder. Remove any staples and paper clips from the pages. Insert the original documents face up in the document feeder, with the top of the page entering the feeder first. Adjust thepaper guides so that they fit against the original documents.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"></p>
+</li>
+</ul>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">Touch Copy, then enter the number of copies needed.</p>
+<p style="padding-top: 5pt; padding-left: 33pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b> To amend the number of copies entered, touch the Xbutton, then enter the required quantity.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">If scanning from 2-sided original documents, touch 2-Sided, then select an option.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">Adjust copy settings as needed.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">Touch Start. If you placed documents in the feeder, scanning continues until the feeder is empty.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">If you are scanning from the document glass, when prompted, do one of the following:</p>
+<ul id="l12">
+<li>
+<p style="padding-top: 6pt; padding-left: 48pt; text-indent: 0pt; text-align: left;">To complete the job and return to the Copy app, touch Done.</p>
+</li>
+<li>
+<p style="padding-top: 6pt; padding-left: 48pt; text-indent: 0pt; text-align: left;">To scan another page, load a new original document on the document glass, then touch Add Page.</p>
+</li>
+<li>
+<p style="padding-top: 6pt; padding-left: 48pt; text-indent: 0pt; text-align: left;">To delete the scan and return to the Copy app, touch Cancel, then touch Delete.</p>
+</li>
+</ul>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 33pt; text-indent: -16pt; text-align: left;">To return to the home screen, press the Home button.</p>
+</li>
+</ol>
+<h2 style="padding-top: 30pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #1fa040;"><a name="bookmark6"></a>Email Overview<a name="bookmark7"></a></h1>
+<p style="padding-top: 5pt; padding-left: 0pt; text-indent: 0pt; line-height: 135%; display: table; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">You can use the Email app to scan images and attach them to emails. You can specify the file name and format of the attachment and include a subject heading and message for the email.</p>
+<h3 style="padding-top: 5pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #243f60;">Sending a Scanned Image in an Email:</h3>
+<ol id="l9">
+<li>
+<p class="s7" style="padding-left: 17pt; text-indent: 0pt; text-align: left;">To send a scanned image in an email:</p>
+
+<ol id="l10">
+<li>
+<p class="s7" style="padding-left: 52pt; text-indent: -17pt; text-align: left;">At the printer control panel, press the Home button.</p>
+
+</li>
+<li>
+<p class="s7" style="padding-left: 52pt; text-indent: -17pt; text-align: left;">To clear previous app settings, touch Rese<span class="p">t.</span></p>
+
+</li>
+<li>
+<p style="padding-left: 52pt; text-indent: -17pt; text-align: left;">Load your original documents.</p>
+
+<ul id="l11">
+<li>
+<p style="padding-left: 60pt; text-indent: -14pt; line-height: 94%; text-align: left;">For single pages, use the document glass. Lift the automatic document feeder, then place the original documents face down in the upper-left corner of the document glass.</p>
+
+<p style="padding-left: 49pt; text-indent: 0pt; text-align: left;">&nbsp;</p>
+</li>
+<li>
+<p style="padding-top: 9pt; padding-left: 60pt; text-indent: -14pt; text-align: left;">For multiple, single, or 2-sided pages, use the single-pass duplex automatic document feeder. Remove any staples or paper clips fromthepages. Inserttheoriginal documents faceup in the automaticdocument feeder, with the top of the page entering the feeder first. Adjust the paper guides so that they fit against the document originals.</p>
+
+<p style="padding-left: 158pt; text-indent: 0pt; text-align: left;">&nbsp;</p>
+
+</li>
+</ul>
+</li>
+<li>
+<p style="padding-top: 4pt; padding-left: 52pt; text-indent: -17pt; text-align: left;">Touch Email.</p>
+
+</li>
+<li>
+<p style="padding-left: 44pt; text-indent: -9pt; text-align: left;">Enterrecipients:</p>
+<p style="padding-top: 6pt; padding-left: 136pt; text-indent: -18pt; text-align: left;">a. To enter the email address manually into the To field, type the address using the touch screen keypad. Touch Enter.</p>
+
+</li>
+<li>
+<p style="padding-left: 44pt; text-indent: -9pt; text-align: left;">If scanning from 2-sided original documents, touch 2-Sided Scanning, then select an option.</p>
+</li>
+</ol>
+</li>
+</ol>

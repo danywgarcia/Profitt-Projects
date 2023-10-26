@@ -1,0 +1,29 @@
+<html>
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style id="compiled-css" type="text/css">
+fieldset<!--   w  w w . j  a va2 s.c  o m-->
+ {
+   max-width:2em;
+   width:2em;
+   border:2px solid Chartreuse;
+}
+
+li
+ {
+   max-width:inherit;
+   width:2em;
+   word-wrap:break-word;
+}
+</style> 
+ </head> 
+ <body> 
+  <fieldset> 
+   <div> 
+    <ul> 
+     <li class="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper molestie lacus sed fermentum. Aliquam erat volutpat. Vestibu</li> 
+    </ul> 
+   </div> 
+  </fieldset>  
+ </body>
+</html>

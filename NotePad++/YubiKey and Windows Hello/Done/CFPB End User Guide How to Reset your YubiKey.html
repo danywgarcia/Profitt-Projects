@@ -1,0 +1,471 @@
+<style type="text/css">
+* {
+margin: 0;
+padding: 0;
+text-indent: 0;
+}
+
+div.page {
+width: 880px;
+border: 1px solid white;
+padding-top: 5px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+background-size: 25px 25px;
+background-image:
+linear-gradient(to right, solid white, transparent 1px),
+linear-gradient(to bottom, solid white, transparent 1px);;
+}
+
+toc .toc_container {
+background: none;
+border: 1px solid white;
+display: table;
+font-size: 100%;
+margin-bottom: 1em;
+padding: 5px;
+width: 470pt;
+}
+
+.toc_title {
+font-weight: 700;
+text-align: center;
+}
+
+h1 {
+color: #404040;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 24pt;
+}
+
+h2 {
+color: #404040;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 18pt;
+}
+
+h3 {
+color: #292929;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 14pt;
+}
+
+.p,
+p {
+color: #292929;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 12pt;
+margin: 3px;
+padding-left: 15px;
+padding-right: 80px;
+}
+
+.s1 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+.s2 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s3 {
+color: #2D2D2D;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+.s4 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s5 {
+color: #1F8476;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s7 {
+color: #2D2D2D;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s8 {
+color: #292929;
+font-family: "Times New Roman", serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s9 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 12pt;
+}
+
+.s10 {
+color: black;
+font-family: "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11pt;
+}
+
+.a {
+color: #1F8476;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: underline;
+font-size: 10.5pt;
+}
+
+li {
+display: block;
+}
+
+#l1 {
+padding-left: 0pt;
+counter-reset: c1 1;
+}
+
+#l1>li>*:first-child:before {
+counter-increment: c1;
+content: counter(c1, decimal)". ";
+color: black;
+list-style-position: inside;
+font-family: Georgia, serif;
+font-style: normal;
+font-size: 11.5pt;
+}
+
+#l1>li:first-child>*:first-child:before {
+counter-increment: c1 0;
+}
+
+#l2 {
+padding-left: 15pt;
+}
+
+#l2>li>*:first-child:before {
+content: " ";
+color: #2D2D2D;
+font-family: Symbol, serif;
+font-style: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l3 {
+padding-left: 0pt;
+counter-reset: d1 1;
+}
+
+#l3>li>*:first-child:before {
+counter-increment: d1;
+content: counter(d1, upper-latin)". ";
+color: #292929;
+font-family: Georgia, sans-serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+#l3>li:first-child>*:first-child:before {
+counter-increment: d1 0;
+}
+
+#l4 {
+padding-left: 0pt;
+counter-reset: e1 1;
+}
+
+#l4>li>*:first-child:before {
+counter-increment: e1;
+content: counter(e1, decimal)". ";
+color: black;
+list-style-position: inside;
+font-family: Georgia, serif;
+font-style: normal;
+font-size: 11.5pt;
+}
+
+#l4>li:first-child>*:first-child:before {
+counter-increment: e1 0;
+}
+
+#l5 {
+padding-left: 0pt;
+counter-reset: f1 1;
+}
+
+#l5>li>*:first-child:before {
+counter-increment: f1;
+content: counter(f1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l5>li:first-child>*:first-child:before {
+counter-increment: f1 0;
+}
+
+#l6 {
+padding-left: 0pt;
+counter-reset: f2 1;
+}
+
+#l6>li>*:first-child:before {
+counter-increment: f2;
+content: counter(f2, lower-latin)". ";
+color: #2D2D2D;
+font-family: Georgia, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+#l6>li:first-child>*:first-child:before {
+counter-increment: f2 0;
+}
+
+#l7 {
+padding-left: 0pt;
+counter-reset: g1 1;
+}
+
+#l7>li>*:first-child:before {
+counter-increment: g1;
+content: counter(g1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l7>li:first-child>*:first-child:before {
+counter-increment: g1 0;
+}
+
+#l8 {
+padding-left: 0pt;
+counter-reset: h1 1;
+}
+
+#l8>li>*:first-child:before {
+counter-increment: h1;
+content: counter(h1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l8>li:first-child>*:first-child:before {
+counter-increment: h1 0;
+}
+
+#l9 {
+padding-left: 0pt;
+counter-reset: i1 1;
+}
+
+#l9>li>*:first-child:before {
+counter-increment: i1;
+content: counter(i1, decimal)". ";
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l9>li:first-child>*:first-child:before {
+counter-increment: i1 0;
+}
+
+#l10 {
+padding-left: 0pt;
+counter-reset: j1 1;
+}
+
+#l10>li>*:first-child:before {
+counter-increment: j1;
+content: counter(j1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l10>li:first-child>*:first-child:before {
+counter-increment: j1 0;
+}
+
+#l11 {
+padding-left: 0pt;
+counter-reset: k1 1;
+}
+
+#l11>li>*:first-child:before {
+counter-increment: k1;
+content: counter(k1, decimal)". ";
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l11>li:first-child>*:first-child:before {
+counter-increment: k1 0;
+}
+
+#l12 {
+padding-left: 0pt;
+}
+
+#l12>li>*:first-child:before {
+content: " ";
+color: black;
+font-family: Symbol, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+</style>
+<div class="page">
+<h1 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">CFPB End User Guide:</h1>
+<h2 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">How to Reset your YubiKey</h2>
+<h3 style="padding-top: 10pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #243f60;">Overview</h3>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 0pt; line-height: 120%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">Your YubiKey is registered on behalf of end user by the Service Desk using a default PIN. This document is for when an end user does not remember their custom PIN or if the end user has misplaced the YubiKey and will need to reset their YubiKey for security .</p>
+<h3 style="padding-top: 10pt; text-indent: 15pt; text-align: left; font-weight: bold; color: #243f60;">For Windows Users</h3>
+<ol id="l1">
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 26pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Click</em> the <strong>Start menu</strong> icon and search for '<strong>Settings</strong>', then <em>click</em> on the '<strong>Settings</strong>' icon.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=df6ef6971b993d10dbc743f1f54bcbb5" width="280" height="188" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Click</em> '<strong>Accounts</strong>', then '<strong>Sign-in options</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=3a7e7e571b993d10dbc743f1f54bcb0a" width="337" height="178" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp; Click <strong>&lsquo;Security Key&rsquo;</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=a49efa971b993d10dbc743f1f54bcb8f" width="337" height="202" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">Once expanded, <em>click</em> &lsquo;<strong>Manage</strong>&rsquo;.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=bcaefe971b993d10dbc743f1f54bcbf5" width="336" height="94" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Touch</em> the <strong>metal tab</strong> (a gold strip on the side or gold circle) on your YubiKey to verify user presence <br /><span style="padding-top: 5pt; padding-left: 38pt; text-indent: 20pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> when prompted.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=3fceb2d71b993d10dbc743f1f54bcb4b" width="184" height="186" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">At the next prompt, <em>select</em> &lsquo;<strong>Reset Security Key</strong>&rsquo; to restore the YubiKey to factory settings.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=3bde3e971b993d10dbc743f1f54bcbfa" width="194" height="241" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">At the warning prompt, <em>click</em> <strong>'Proceed'</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=23ee3e971b993d10dbc743f1f54bcb70" width="190" height="191" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">Next, safely <em>remove</em> and <em>re-insert</em> the <strong>Yubikey</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=fa2fbad71b993d10dbc743f1f54bcb1f" width="186" height="206" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Touch</em> the <strong>metal tab</strong> (a gold strip on the side or gold circle) on your YubiKey <u>twice within 10 seconds</u><br /><span style="padding-top: 5pt; padding-left: 40pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> when prompted.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=ce3fb6d71b993d10dbc743f1f54bcbf5" width="335" height="177" /></p>
+<p style="padding-top: 10pt; padding-left: 43pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong> If successful, the confirmation message '<strong>Reset Complete</strong>' will appear.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=754fbe971b993d10dbc743f1f54bcb7a" width="163" height="187" /></p>
+</li>
+</ol>
+<h3 style="padding-top: 20pt; text-indent: 15pt; text-align: left; font-weight: bold; color: #243f60;">For macOS Users</h3>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 10pt; line-height: 100%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">The Yubikey is reset using the YubiKey Manager. If the application is not present, install from Self Service.</p>
+<ol id="l4">
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Open</em> &lsquo;<strong>Yubikey Manager</strong>&rsquo;.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=815fb6d71b993d10dbc743f1f54bcbfd" width="238" height="211" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Select</em> <strong>'FIDO2'</strong> from the Applications menu.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=f35f3ed71b993d10dbc743f1f54bcb90" width="252" height="178" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">At the next prompt, <em>click</em> on &lsquo;<strong>Reset FIDO</strong>&rsquo; to restore the YubiKey to factory settings.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=f27f72d71b993d10dbc743f1f54bcb74" width="237" height="145" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">At the '<strong>Reset FIDO?</strong>' prompt, <em>click</em> &lsquo;<strong>Yes</strong>&rsquo; to confirm resetting the FIDO key.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=d49f321b1b993d10dbc743f1f54bcbfe" width="291" height="136" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">Next, safely <em>remove</em> and <em>re-insert</em> the <strong>Yubikey</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=a2cfb61b1b993d10dbc743f1f54bcbb6" width="313" height="178" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em> Touch</em> the <strong>metal tab</strong> (a gold strip on the side or gold circle) on your YubiKey <br /><span style="padding-top: 5pt; padding-left: 40pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> when prompted.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=e1df361b1b993d10dbc743f1f54bcb1b" width="314" height="172" /></p>
+<p style="padding-top: 10pt; padding-left: 50pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong> If successful, the confirmation message '<strong>FIDO applications have been reset</strong>' will appear.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 60%;"><img src="/sys_attachment.do?sys_id=8aefb21b1b993d10dbc743f1f54bcba6" width="341" height="80" /></p>
+</li>
+</ol>
+</div>

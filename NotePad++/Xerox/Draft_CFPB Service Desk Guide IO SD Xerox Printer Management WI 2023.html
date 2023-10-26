@@ -1,0 +1,699 @@
+<style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+  }
+  div.page {
+    width: 900px;
+    display: block;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-size: 25px 25px;
+    background-image:
+    linear-gradient(to right, white 1px, transparent 1px),
+    linear-gradient(to bottom, white 1px, transparent 1px);
+  }
+.toc_container {
+  background: solid white;
+  border: 1px white;
+  display: block;
+  text-decoration: none;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 0px
+  margin-left: auto; 
+  margin-right: auto;
+  width: 665pt;
+} 
+.col
+  {
+  width: 100%;
+  height: 200px;
+  padding-bottom:  20pt;
+  margin: 0;
+  margin-bottom:20px;
+  padding-top: 0px;
+}
+#col-1 {
+  height: 200px;
+  padding-bottom:  0pt;
+  margin: 0;
+  float: left;
+  background: white;
+}
+  h1 {
+    color: #243f60;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-size: 28pt;
+  }
+  h2 {
+    color: #243f60;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-size: 24pt;
+  }
+  h3 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 20pt;
+  }
+  h4 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 18pt;
+  }
+  h5 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 16pt;
+    padding-left: 30pt; 
+    padding-right: 0pt;  
+    line-height: 135%; 
+    word-wrap: break-word; 
+    margin-left: auto; 
+    margin-right: auto;
+  }  
+  h6 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    padding-left: 50pt; 
+    padding-right: 0pt;  
+    line-height: 135%; 
+    word-wrap: break-word; 
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .p,
+  p {
+    color: black;
+    display: block;
+    font-family: Georgia, serif;   
+	text-indent: 0pt;
+	text-align: justify;
+	line-height: 125%;
+	word-wrap: break-word;
+    padding-left: 0pt;
+    padding-right: 0pt;
+	padding-top: 0pt;	
+	margin-left: auto; 
+	margin-right: auto;
+  }
+  .s1  {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 16px; 
+  }
+  .s2 {
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt; 
+    padding-left: 0pt; 
+    text-indent: 0pt; 
+    line-height: 125%; 
+    word-wrap: break-word; 
+    text-align: left; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .s3 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+  .s4 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s5 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s6 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s7 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s8 {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 14pt;
+  }
+  .s9 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 16pt;
+    padding-left: 0pt; 
+    padding-right: 0pt;  
+    line-height: 135%; 
+    word-wrap: break-word; 
+    margin-left: auto; 
+    margin-right: auto;
+  }  
+  .s10 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    padding-left: 30pt; 
+    padding-right: 0pt;  
+    line-height: 135%; 
+    word-wrap: break-word; 
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .a {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+/* unvisited link */
+a:link {
+  color: #254b87;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+li {
+  list-style-position: outside;
+  display: block;
+  word-wrap: break-word;
+  padding-right: 40pt;
+  margin-bottom:10px;
+  line-height: 125%;
+  font-color: black;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-align: left;
+  font-style: normal;
+  font-weight: none;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+ol.numerical > li:first-child {
+    counter-reset: my-sec-counter;
+}
+ol.numerical > li:before {
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.I > li:first-child {
+    counter-reset: r1 0;
+    counter-increment: r1 0;
+}
+ol.I > li:before {
+  counter-increment: r1;
+  content: counter(r1, upper-roman) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.i > li:first-child {
+    counter-reset: r1 0;
+    counter-increment: r1 0;
+}
+ol.i > li:before {
+  counter-increment: r1;
+  content: counter(r1, lower-roman) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.A > li:first-child {
+    counter-reset: n1 0;
+    counter-increment: n1 0;
+}
+ol.A > li:before {
+  counter-increment: n1;
+  content: counter(n1, upper-latin) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.a > li:first-child {
+    counter-reset: n1 0;
+    counter-increment: n1 0;
+}
+ol.a > li:before {
+  counter-increment: n1;
+  content: counter(n1, lower-latin) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.b > li:first-child {
+    counter-reset: b1 0;
+    counter-increment: b1 0;
+}
+ol.b > li:before {
+  counter-increment: b1;
+  content: counter(b1, disc) " ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.c > li:first-child {
+    counter-reset: c1 0;
+    counter-increment: c1 0;
+}
+ol.c > li:before {
+  counter-increment: c1;
+  content: counter(c1, circle) " ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.d > li:first-child {
+    counter-reset: d1 0;
+    counter-increment: d1 0;
+}
+ol.d > li:before {
+  counter-increment: d1;
+  content: "- ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.s > li:first-child {
+    counter-reset: s1 0;
+    counter-increment: s1 0;
+}
+ol.s > li:before {
+  counter-increment: s1;
+  content: counter(s1, square) " ";
+  font-weight: bold;
+  font-size: 12px;
+}
+</style>
+<div class="page">
+<h1 style="color: #1fa040;">CFPB Service Desk Guide:</h1>
+<h2 style="color: #1fa040;">IO SD Xerox Printer Management WI 2023</h2>
+<div class="toc_container">
+<h3 class="toc_title" style="padding-top: 0pt; text-align: center;">Table of Contents</h3>
+<ol class="numerical">
+  <li>
+  <p class="s9"><a href="#1-0">&nbsp;Introduction</a></p>
+  </li>
+  <p class="s10"><a href="#1-1">1.1&nbsp;Purpose</a></p>
+  <p class="s10"><a href="#1-2">1.2&nbsp;Scope</a></p>
+  <p class="s10"><a href="#1-3">1.3&nbsp;Intended Audience</a></p>
+  <li>
+  <p class="s9" style="padding-top: 10pt"><a href="#2-0">&nbsp;Supply Requests</a></p>
+  <p class="s10"><a href="#2-1">2.1&nbsp;Ticketing</a></p>
+  <p class="s10"><a href="#2-2">2.2&nbsp;Submitting Supply Requests</a></p>
+  <p class="s10"><a href="#2-3">2.3&nbsp;Servicing</a></p>
+  </li>
+  <li>
+  <p class="s9" style="padding-top: 10pt"><a href="#3-0">&nbsp;Service/Repair Requests</a></p>
+  <p class="s10"><a href="#3-1">3.1&nbsp;Submitting a Service/Repair Request</a></p>
+  <p class="s10"><a href="#3-2">3.2&nbsp;Following Vendor Servicing of Printer</a></p>
+  <p class="s10"><a href="#3-3">3.3&nbsp;JTF Printer Repair Service/Request Template</a></p>
+  </li>
+  <li>
+  <p class="s9"><a href="#4-0">&nbsp;Service Level Agreements (SLAs)</a></p>
+  <p class="s10"><a href="#4-1">4.1&nbsp;Xerox</a></p>
+  </li>
+  <p class="s9" style="padding-top: 10pt"><a href="#appendixa">&nbsp;Appendix A: Supply Request Form</a></p>
+  <p class="s9" style="padding-top: 10pt"><a href="#appendixb">&nbsp;Appendix B: Creating Service Tickets</a></p>
+  <p class="s10"><a href="#b-1">B.1&nbsp;Linking the Printer to the Ticket</a></p>
+  <p class="s10"><a href="#b-2">B.2&nbsp;Toner or Consumable Replacement</a></p>
+  <p class="s10"><a href="#b-3">B.3&nbsp;Repair Requests</a></p>  
+  <p class="s10"><a href="#b-4">B.4&nbsp;Paper Jam or Hardware Issue</a></p>
+  <p class="s10"><a href="#b-5">B.5&nbsp;Maintenance Submitting Supply Requests</a></p>
+    <h3 class="toc_title" style="padding-top: 5pt; text-align: center;">List of Figures</h3>
+  <p class="s10"><a href="#figure-1">Figure 1.&nbsp;Linking the Printer to the Ticket</a></p>
+  <p class="s10"><a href="#figure-2">Figure 2&nbsp;Printer Search</a></p>
+  <p class="s10"><a href="#figure-3">Figure 3&nbsp;Toner Replacement Ticket</a></p>
+      <p class="s10"><a href="#figure-4">Figure 4&nbsp;Request Number</a></p>
+  <p class="s10"><a href="#figure-5">Figure 5&nbsp;Requested Item</a></p>
+      <p class="s10"><a href="#figure-6">Figure 6&nbsp;Task Fields</a></p>
+  <p class="s10"><a href="#figure-7">Figure 7&nbsp;Repair Request</a></p>
+      <p class="s10"><a href="#figure-8">Figure 8&nbsp;Paper Jam/Hardware Ticket</a></p>
+  <p class="s10"><a href="#figure-9">Figure 9&nbsp;Maintenance Request Ticket</a></p>
+  </ol>
+</div>
+<h3 id="1-0">1. Introduction</h3>
+<h4 id="1-1">1.1 Purpose</h4>
+<p class="s1">This document provides instructions on addressing issues related to the Consumer Financial Protection Bureau (CFPB) Xerox and copier/printers that staff technicians cannot troubleshoot independently.</p> 
+<h4 id="1-2">1.2 Scope</h4>
+<p class="s1">These work instructions guide the user on how to resolve printer-related issues that cannot be resolved by Service Desk technicians.</p>
+<h4 id="1-3">1.3 Intended Audience</h4>
+<p class="s1">Tier 1 (Service Desk) and Tier 2 (Desk Side Support) technicians, as well as Service Desk management, should review this document when seeking to resolve issues with the Xerox printers.</p>
+<h3 id="2-0">2. Supply Requests</h3>
+<h4 id="2-1">2.1 Ticketing</h4>
+<p class="s1">Staff must ensure proper documentation of the issue prior to contacting the appropriate vendor. To do this, open ServiceNow and search for a ticket referring to the issue. If no ticket exists, create a ticket detailing the specific printer/copier, location, issue, the time the incident was observed, the asset tag number, and the printer serial number (available in the CMDB entry for the printer). For information about the appropriate categorization and creation of these tickets, review Appendix C.</p>
+<p class="s1" style="padding-top: 10pt;">Upon completion of the ServiceNow ticket, complete the Service Request Form (see Appendix A) and provide the exact nature of the issue. Attach a copy of the request form to the ticket.
+</p>
+<h4 id="2-2">2.2 Submitting Supply Requests</h4>
+<p class="s1">To submit supply requests:</p>
+<ol id="l1">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Contact the vendor to report the supply need, providing as much detail as possible.</p>
+<p style="padding-top: 5pt; padding-left: 32pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b>&nbsp;For Xerox printers, email the Supply Request Form (see Appendix A) to <a href = "mailto: supplies@jtfgov.com">JTF</a> and cc: the COR on the email.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Record the request as sent in the Notes field in the ticket, and include the date and time.</p>
+<p style="padding-top: 5pt; padding-left: 32pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b>&nbsp;The contractor then contacts either the Service Desk point of contact (POC) at either (202) 435-7777 or x5777, or<br /><span style="padding-top: 5pt; padding-left: 38pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> the submitting technician with the planned date and time of servicing.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Update the Outage Start Date field to indicate when the issue was initially reported. </p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Record the vendor response date/time in the work notes.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Update the Follow-up field to indicate the date/time expected for the vendor supply/service response:</p>
+  <p style="padding-top: 5pt; padding-left: 32pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b>&nbsp;For supplies requests, the expected time should be no greater than three days after the request.</p>
+</li>
+</ol>
+<h4 id="2-3">2.3 Servicing</h4>
+<p class="s1">The Service Desk technician informs the relevant COR once the printer technician arrives and provides updates on the printer’s status. Staff must do the following during servicing:</p>
+  <ol id="l2">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Record the date/time of the JTF/Meridian email response in the work notes.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Escort the contractor technician to the printer location.</p>
+  </li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Note the technician’s arrival time in the ticket Notes field.</p>
+  </li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Test the printer once the technician completes their work.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Escort the printer vendor technician from the building.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Indicate in the work notes field the time at which the technician completed work.</p>
+  </li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Email the updated printer status to the Service Desk manager, team leads, and the appropriate COR.</p>
+  </li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Close the ticket.</p>
+</li> 
+</ol>
+<h3 id="3-0">3. Service/Repair Requests</h3>
+<h4 id="3-1">3.1 Submitting a Service/Repair Request</h4>
+<p class="s1">When a printer requires repair, complete the following steps to remedy the issue:</p>
+<ol id="l3">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Send an email to the <a href = "mailto:servicedesk@cfpb.gov?cc=Timothy.Yehle@cfpb.gov, Catherine.Hurkamp@cfpb.gov, Christopher.Johnson2@cfpb.gov, Kipp.White@cfpb.gov, Bruce.Torain@cfpb.gov, Chantel.Gray@cfpb.gov, Brandon.Ennis@cfpb.gov">Service Desk</a> (servicedesk@cfpb.gov) indicating the affected printer and the cause of the outage<br /><span style="padding-top: 5pt; padding-left: 30pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">(this will automatically create a ticket in our ticketing system).</span></p>
+<p style="padding-top: 5pt; padding-left: 40pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b>&nbsp;The link will also add Timothy Yehle, Catherine Hurkamp, Christopher Johnson, Kipp White, Bruce Torain,<br /><span style="padding-top: 5pt; padding-left: 35pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">Chantel Gray, and Brandon Ennis in the CC line.</span></p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;In the email body, include:</p>
+<ol id="l31">
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;A request to the Customer Service Analysts (CSAs) to send an advisory out for the affected users, as well as a notation <br /><span style="padding-top: 5pt; padding-left: 30pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> to Service Desk to escalate the incident to the CSA queue for this purpose.</span></p>
+</li>
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Provide an alternative printer for users to map to during the outage. </p>
+</li>
+</ol>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Email <a href = "mailto: supplies@jtfgov.com">JTF</a> (service@jtfgov.com) using the email template in Section 3.3 (update all the areas highlighted in yellow).</p>
+<ol id="l32">
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;If JTF does not reply within one hour, send an email to <a href = "mailto:service@jtfgov.com?cc=Timothy.Yehle@cfpb.gov, Catherine.Hurkamp@cfpb.gov, Christopher.Johnson2@cfpb.gov, Kipp.White@cfpb.gov, Bruce.Torain@cfpb.gov, Chantel.Gray@cfpb.gov, Brandon.Ennis@cfpb.gov">Service JTF</a> (service@jtfgov.com) requesting a status update.</p>
+</li>
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;If JTF is not onsite within four hours, send an email to <a href = "mailto:service@jtfgov.com?cc=Timothy.Yehle@cfpb.gov, Catherine.Hurkamp@cfpb.gov, Christopher.Johnson2@cfpb.gov, Kipp.White@cfpb.gov, Bruce.Torain@cfpb.gov, Chantel.Gray@cfpb.gov, Brandon.Ennis@cfpb.gov">Service JTF</a> (service@jtfgov.com) requesting a status update.</p>
+<p style="padding-top: 5pt; padding-left: 60pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b>&nbsp;Both links will also add Timothy Yehle, Catherine Hurkamp, Christopher Johnson, Kipp White, Bruce<br /><span style="padding-top: 5pt; padding-left: 40pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> Torain, Chantel Gray, and Brandon Ennis in the CC line.</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Update the ticket to note whether JTF replied, and include the time of the response (if applicable).</p>
+</li>
+</ol>  
+<h4 id="3-2">3.2 Following Vendor Servicing of Printer</h4>
+<p class="s1">Once JTF arrives onsite, complete the following steps:</p>
+<ol id="l3">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Note in the ticket when the JTF technician arrived.</p>      
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Make sure to test the printer that is working properly</p>      
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Ask the JTF technician to provide a documentation report of their work; forward the report to all personnel in step 2 of<br /><span style="padding-top: 5pt; padding-left: 30pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> Section 3.1</span></p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Note in the ticket the time of completion for the repair.</p>      
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Send an email to the CSAs, Stefanie Cannon and Marie Hodges, to ask for them to create another advisory message<br /><span style="padding-top: 5pt; padding-left: 30pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> regarding restoration of printer services.</span></p>      
+</li>
+</ol>  
+<h4 id="3-3">3.3 JTF Printer Repair Service/Request Template</h4>
+<p class="s1"><p style="padding-top: 0pt; padding-left: 0pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><b>Note:</b>&nbsp;Use the following template when submitting a printer repair request to JTF, and update all areas highlighted in yellow.</p>
+<p class="s1">Hello JTF Team,</p>
+<p class="s1">Please find the repair request below for our Xerox machine. Please reply as soon as possible with confirmation that this order has been received.</p>
+<p class="s1">Thank you for your support.</p>
+<h3 id="4-0">4. Service Level Agreements (SLAs)</h3>
+<p class="s1">Technicians must create a request ticket in the SD ticketing system to notify the Service Desk Manager (SDM) of any vendor-caused breaches of the below SLAs. The ticket must include the vendor name (Xerox, JTF, Meridian), and a short description of the SLA breach.</p>
+<h4 id="4-1">4.1 Xerox</h4>
+<p class="s1">Contractor shall be capable of meeting the following SLA:</p>
+<ol id="l12">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;The vendor shall temporarily replace any critical copiers that are down for more than eight working hours and<br /><span style="padding-top: 5pt; padding-left: 28pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> any non-critical copiers that are down for more than 16 working hours at no additional cost to the Government.</span></p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;During CFPB’s normal hours of operation (8 a.m. to 5 p.m.), Monday through Friday, (excluding holidays observed by the<br /><span style="padding-top: 5pt; padding-left: 26pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> Government, the contractor shall respond via an email acknowledgement within 1 hour of receipt of a verbal or written<br /><span style="padding-top: 5pt; padding-left: 28pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> request for a service call.</span></span></p>
+  </li>
+  <li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Onsite - Within four business hours of the reported incidents (only during our operating hours-8 a.m. to 5 p.m.<br /><span style="padding-top: 5pt; padding-left: 28pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> Monday - Friday)</span></p>
+  </li>
+  <li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Resolution - Within one business day of the reported incidents on critical machines, and two business days for<br /><span style="padding-top: 5pt; padding-left: 28pt; text-indent: 0pt; line-height: 125%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> non-critical machines. CFPB shall designate two copiers as “critical” at the time of installation.</span></p>
+  </li>
+  <li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Issues reported after business hours shall be responded to the next business day within the agreed upon SLA.</p> 
+</li>
+</ol>
+<h3 id="appendixa">Appendix A: Supply Request Form</h3>
+<p class="s1">This form is used when requesting supplies from JTF for a copier. Expected response time is 1 business hour from submission of the request.</p>
+<h3 id="appendixb">Appendix B: Creating Service Tickets</h3>
+<h4 id="b-1">B.1 Linking the Printer to the Ticket</h4>
+<p class="s1">The affected printer must be linked to any printer service ticket created. To do this, the technician must add the serial number for the printer via the Affected CIs tab, located below Related Links. The serial number can be found in the Description field of the Printer Alert ticket. </p>
+<p class="s1">To link the printer to the ticket:</p>
+<ol id="l4">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click the Affected CIs tab under Related Links.</p>
+</li>
+  <li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click Edit to search for the printer.</p>
+</li>
+  <li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Search on the Serial Number of the printer and click Run Filter.</p>
+</li>
+  <li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Select the affected printer and click Save.</p>
+</li>
+</ol>
+<h4 id="b-2">B.2 Toner or Consumable Replacement</h4>
+<p class="s1">To submit a request for toner or consumable replacements:</p>
+<ol id="l5">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Open the ServiceNow ticket and confirm that it is classified as an Incident. </p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Complete the record fields as shown in Figure 3.</p>
+<ul id="l13">
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Select Hardware Support for the Service Type</p>
+</li>
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Choose Printer for Service Offering</p> 
+</li>
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Choose Network for Business Service</p>
+</li>
+</ul>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Link the affected copier to the ticket as described in Section C.1.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Choose More Options at the top of the ticket (represented by the three circles icon), click Add Tag, and type Toner.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click Save.</p>
+</li>
+<p class="s1">Once the Incident ticket is updated, create a Supply Order task for the toner/consumable.</p>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Copy the Short Description field in the incident.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click IT Service Catalog, then select Other Request.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Paste the Short Description field language copied in Step 6 into the appropriate section of the Request.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Enter “This is the Supply Order task for [Short Description]” in the Description field.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click Submit.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Open the Request Record by clicking the link for the Request Number on the ticket.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Scroll down to the bottom of the ticket and click the Requested Item (RITM) record.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click the task (labeled SCTASK[number]) under the Catalog Tasks section at the bottom of the ticket. </p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click Variables, then copy the Short Description and Description fields, and paste into the appropriate fields for the task.</p>
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Fill out the task fields as follows:</p>
+<ul id="l13">
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Change Task State to Work In Progress.</p>
+</li>
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Change Assignment Group to Printer Management.</p> 
+</li>
+<li>
+<p style="padding-left: 25pt; text-indent: 15pt;">&nbsp;Choose your name for the Assigned to field.</p>
+</li>
+</ul>  
+</li>
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Click Save. Assign the task to the Site Contact for Service Desk.  </p>
+</li>
+</ol>
+<h4 id="b-3">B.3 Repair Requests</h4>
+<p class="s1">To submit a repair request, ensure your request matches Figure 7:</p>
+<h4 id="b-4">B.4 Paper Jam or Hardware Issue</h4>
+<p class="s1">To submit a ticket for a paper jam or other hardware issue, ensure that your request matches the image provided in Figure 8:</p>
+<ol id="l6">
+<li>
+<p style="padding-left: 5pt; text-indent: 15pt;">&nbsp;Complete the following required fields:</p>
+  
+</li>
+  </ol>
+<h4 id="b-5">B.5 Maintenance Submitting Supply Requests</h4>
+<p class="s1">Technicians must enter Xerox maintenance requests quarterly with JTF. As part of this process, technicians must enter a maintenance request ticket, in order to track and confirm that the vendor is meeting their SLAs for maintenance of equipment.</p>
+<p class="s1">To submit a maintenance request ticket, ensure that your request matches the image provided in Figure 9:</p>
+</div>
+  </div>
+
+b.4
+Step 1.	Complete the following required fields:
+•	Select Hardware Support for the Service Type
+•	Choose Printer for Service Offering
+•	Choose Network for Business Service
+Step 2.	Link the affected copier to the ticket as described in Section C.1.
+Step 3.	Click More Options, click Add Tag, and type Paper Jam. 
+Step 4.	Set the Urgency to Service Impaired - Workaround.
+Step 5.	Click Save.
+b.5
+Step 1.	Complete the following required fields:
+•	Select Hardware Support for the Service Type
+•	Choose Printer for Service Offering
+•	Choose Network for Business Service
+Step 2.	Link the affected copier to the ticket as described in Section C.1.
+Step 3.	Click More Options, click Add Tag, and type Maintenance. 
+Step 4.	Set the Urgency to Request.
+Step 5.	Click Save.

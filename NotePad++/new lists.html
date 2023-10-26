@@ -1,0 +1,135 @@
+			<!DOCTYPE html>
+<html>
+<head>
+<style>
+  div.page {
+    width: 900px;
+    display: block;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-size: 25px 25px;
+    background-image:
+    linear-gradient(to right, white 1px, transparent 1px),
+    linear-gradient(to bottom, white 1px, transparent 1px);
+  }
+    .p,
+  p {
+    color: black;
+    display: block;
+    font-family: Georgia, serif;   
+	text-indent: 0pt;
+	text-align: justify;
+	line-height: 125%;
+	word-wrap: break-word;
+    padding-left: 0pt;
+    padding-right: 0pt;
+	padding-top: 0pt;	
+	margin-left: auto; 
+	margin-right: auto;
+  }
+  .s1  {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 16px; 
+  }
+ol {
+  list-style-position: outside;
+  text-align: justify;
+  word-wrap: break-word;
+  padding-left: 20pt;
+  padding-right: 40pt;
+  padding-top: 0pt;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 125%;
+  font-color: black;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: none;
+  text-decoration: none;
+}
+ol.numerical > li {
+    vertical-align:middle;
+    margin-bottom:10px;
+    display: block;
+}
+ol.numerical > li:first-child {
+    counter-reset: my-sec-counter;
+}
+ol.numerical > li:before {
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter) ". ";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+}
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: square;}
+ol.c {list-style-type: upper-roman;}
+ol.d {list-style-type: lower-alpha;}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>The list-style-type Property</h1>
+<p class="s1">To create a numbered list:</p>
+<ol class="numerical">
+<li>Contact the vendor to report the supply need, providing as much detail as possible.</li>
+<li>Staff must ensure proper documentation of the issue prior to contacting the appropriate vendor. To do this, open ServiceNow and search for a ticket referring to the issue. If no ticket exists, create a ticket detailing the specific printer/copier, location, issue, the time the incident was observed, the asset tag number, and the printer serial number (available in the CMDB entry for the printer). For information about the appropriate categorization and creation of these tickets, review Appendix C.</li>
+</ol>
+<p class="s1">To add a second numbered list:</p>
+<ol class="numerical">
+<li>Use the same CSS</li>
+<li>This will make it cleaner</li>
+</ol>
+<p>Example of unordered lists:</p>
+
+<ul class="e">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+</div>
+</body>
+</html>
+
+ol.n > li:first-child {
+    counter-reset: my-sec-counter;
+}
+ol.n > li:before {
+  counter-increment: my-sec-counter;
+  content: "Note:" counter(my-sec-counter) " ";
+  font-weight: bold;
+  font-size: 17px;
+}
