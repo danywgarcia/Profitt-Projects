@@ -1,0 +1,670 @@
+<style type="text/css">
+    .toc_container {
+        background: solid white;
+        border: 1px white;
+        text-decoration: none;
+        padding: .5em .5em .5em .5em;
+        width: auto;
+    }
+
+    .toc_title {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 1.67em;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: left;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: 0em 0em 0em 0em;
+        margin: 0em auto 0em 1.4em;
+    }
+
+    #toc_container li,
+    #toc_container ul,
+    #toc_container ul li {
+        list-style: outside none none !important;
+    }
+
+    h1 {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 2.33em;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: center;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: 0em 0em 0em 0em;
+        margin: 0em auto 0em auto;
+    }
+
+    h2 {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 2.0em;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: center;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: 0em 0em 0em 0em;
+        margin: 0em auto 0em auto;
+    }
+
+    h3 {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 1.67em;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: left;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: .5em 0em 0em 0em;
+        margin: 0.2em auto 0.2em auto;
+    }
+
+    h4 {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 1.50em;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: left;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: 0em 0em 0em 0em;
+        margin: 0.2em auto 0.2em auto;
+    }
+
+    h5 {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 1.31em;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: left;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: 0em 0em 0em 0em;
+        margin: 0.2em auto 0.2em auto;
+    }
+
+    h6 {
+        color: #243f60;
+        font-family: Georgia, serif;
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        text-indent: 0pt;
+        text-align: left;
+        line-height: 125%;
+        word-wrap: break-word;
+        padding: 0em 0em 0em .5em;
+        margin: 0.5em auto 0.5em auto;
+    }
+
+    .p,
+    p {
+        color: black;
+        display: block;
+        font-family: Georgia, serif;
+        font-size: 12pt;
+        text-align: justify;
+        line-height: 135%;
+        word-wrap: break-word;
+        padding: 0em 2em 0em 1.5em;
+        margin: 0.3em 3em 0.3em 1.2em;
+    }
+
+    .a {
+        color: #1F8476;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+    }
+
+    .p-note {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        text-indent: -2.2em;
+        padding: .31em 6em .31em 2.2em;
+        margin: .2em 3.1em .2em 2.7em;
+    }
+
+    .l-note {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        padding: .21em 6em .31em 0em;
+        margin: .2em -2em .2em 2.3em;
+    }
+
+    .img {
+        display: inline-block;
+        padding: 1.25em 0em 1.25em 7em;
+        margin: 0em 0em 0em 0em;
+    }
+
+    .s1 {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 16px;
+        padding-right: 75pt;
+    }
+
+    .s2 {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        word-wrap: break-word;
+        padding: 0em 0em 0em .5em;
+        margin: 0em auto 0em auto;
+    }
+
+    .s3 {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11.5pt;
+    }
+
+    .s9 {
+        color: #254b87;
+        font-size: 16pt;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+        padding: 0em 0em 0em 0em;
+        margin: 0em auto 0em auto;
+    }
+
+    .s10 {
+        color: #254b87;
+        font-size: 12pt;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        padding: .5em 0em 0em 0em;
+        margin: 0em 0em 0em 0em;
+    }
+
+    .s11 {
+        color: #254b87;
+        float: right;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 10.5pt;
+        vertical-align: bottom;
+        line-height: 18pt;
+    }
+
+    a:link {
+        color: #254b87;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: purple;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: green;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: blue;
+        text-decoration: none;
+    }
+
+    li {
+        display: block;
+        line-height: 125%;
+        color: black;
+        font-family: Georgia, serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        word-wrap: break-word;
+        margin: 0.31em 8em 0.31em 0em;
+        padding: .2em 6em .2em 1em;
+        list-style: decimal outside none;
+        background-color: lightblue
+    }
+
+    .numerical>li:first-child {
+        counter-reset: my-sec-counter;
+    }
+
+    .numerical>li:before {
+        counter-increment: my-sec-counter;
+        content: counter(my-sec-counter) ". ";
+        font-weight: normal;
+        width: 1em;
+        float: left;
+        text-indent: -.6em;
+        font-size: 1.25em;
+        padding: 0em 0em 0em .5em;
+        margin: 0em .3em 0.3em 0em;
+    }
+
+    .upper-I>li:first-child {
+        counter-reset: r1 0;
+        counter-increment: r1 0;
+    }
+
+    .upper-I>li:before {
+        counter-increment: r1;
+        content: counter(r1, upper-roman) ".";
+        font-weight: bold;
+        width: 2.6em;
+        display: inline-block;
+        font-size: 1.25em;
+        padding: 0em 0em 0em 0em;
+        margin: 0.31em .11em 0.31em .11em;
+    }
+
+    .lower-i>li:first-child {
+        counter-reset: r1 0;
+        counter-increment: r1 0;
+    }
+
+    .lower-i>li:before {
+        counter-increment: r1;
+        content: counter(r1, lower-roman) ". ";
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .upper-A>li:first-child {
+        counter-reset: n1 0;
+        counter-increment: n1 0;
+    }
+
+    .upper-A>li:before {
+        counter-increment: n1;
+        content: counter(n1, upper-latin) ". ";
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .lower-a>li:first-child {
+        counter-reset: n1 0;
+        counter-increment: n1 0;
+    }
+
+    .lower-a>li:before {
+        counter-increment: n1;
+        content: counter(n1, lower-latin) ". ";
+        font-weight: bold;
+        font-size: 17px;
+        padding-left: 2em;
+        margin-left: 80px;
+    }
+
+    .bullet>li:first-child {
+        counter-reset: b1 0;
+        counter-increment: b1 0;
+    }
+
+    .bullet>li:before {
+        counter-increment: b1;
+        content: counter(b1, disc) " ";
+        width: 2em;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 0em 0em 0em 0em;
+        margin: .11em .11em 0.11em 2em;
+    }
+
+    .circle>li:first-child {
+        counter-reset: c1 0;
+        counter-increment: c1 0;
+    }
+
+    .circle>li:before {
+        counter-increment: c1;
+        content: counter(c1, circle) " ";
+        font-weight: bold;
+        font-size: 17px;
+        padding-left: 4em;
+        margin-left: 10px;
+    }
+
+    .dash>li:first-child {
+        counter-reset: d1 0;
+        counter-increment: d1 0;
+    }
+
+    .dash>li:before {
+        counter-increment: d1;
+        content: "- ";
+        font-weight: bold;
+        font-size: 17px;
+        padding-left: 0em;
+        margin-left: -25px;
+    }
+
+    .square>li:first-child {
+        counter-reset: s1 0;
+        counter-increment: s1 0;
+    }
+
+    .square>li:before {
+        counter-increment: s1;
+        content: counter(s1, square) " ";
+        font-weight: bold;
+        font-size: 12px;
+        padding-left: 0em;
+        margin-left: -25px;
+    }
+
+    .appendix>li:first-child {
+        counter-reset: n1 0;
+        counter-increment: n1 0;
+    }
+
+    .appendix>li:before {
+        content: counters(item, ".") " ";
+        counter-increment: item;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .toc>li:first-child {
+        counter-reset: r1 0;
+        counter-increment: r1 0;
+    }
+
+    .toc>li:before {
+        counter-increment: r1;
+        content: counter(r1, upper-roman) ".";
+        font-weight: bold;
+        width: 2.6em;
+        display: inline-block;
+        font-size: 1.25em;
+        padding: 0em 0em 0em 0em;
+        margin: 0.31em .11em 0.31em .11em;
+    }
+</style>
+<h3 class="toc_title" id="top">Table of Contents</h3>
+<ol class="toc">
+    <li class="s10"><a href="#1-0" rel="nofollow">Introduction</a></li>
+    <li class="s10"><a href="#2-0" rel="nofollow">Adding a New Network Printer</a></li>
+    <li class="s10"><a href="#3-0" rel="nofollow">Default Black and White Printing</a></li>
+    <li class="s10"><a href="#4-0" rel="nofollow">Printing a Test Page and Creating the Printer Shortcut</a></li>
+    <li class="s10"><a href="#5-0" rel="nofollow">Enabling the Print Separator</a></li>
+    <li class="s10"><a href="#6-0" rel="nofollow">Restricting a printer</a></li>
+    <li class="s10"><a href="#7-0" rel="nofollow">List Printer in Directory</a></li>
+    <li class="s10"><a href="#8-0" rel="nofollow">SNMP Configuration for SolarWinds</a></li>
+    <li class="s10"><a href="#9-0" rel="nofollow">Xerox c505 Printers</a></li>
+</ol>
+<ol class="upper-I" style="color: #243f60; font-size: 1.17em; font-weight: bold;">
+    <li id="1-0" class="s10" style="color: #243f60; font-size: 1.17em;">Introduction<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+        <p class="s1">This document describes how to add a new printer onto CFPB Network, set up and configure a print queue, and configure and manage print services using the Print Management Console (PMC), including setting user restrictions, configuring SNMP settings and enabling a print separator page.</p>
+        <p class="p-note" style="padding-top: 5pt;"><strong>Note:</strong>&nbsp;Requests for non-default items (e.g. disabling the print separator or restricting a printer) should be assigned to the Service Desk Manager Queue for review and approval.</p>
+    </li>
+    <li id="2-0" class="s10" style="color: #243f60; font-size: 1.17em;">Adding a New Network Printer<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+        <p class="s1">When adding a new printer to the network, the technician must add and configure the printer, and then test the printer for functionality. Finally, create a shortcut on the <strong>Z:\</strong> drive. This section outlines the complete process to follow when adding a new printer to the CFPB network.</p>
+    </li>
+    <h6>Adding the Printer</h6>
+    <p class="s2">To add a new printer to the network:</p>
+    <ol class="numerical">
+        <li>Click the <strong>Start</strong> button, select <strong>All Programs</strong> &gt; <strong>Accessories</strong>, and then select <strong>Remote Desktop Connection</strong> from the <strong>Accessories</strong> pop-up menu.</li>
+        <li>On the <em>Remote Desktop Connection</em> window, type &ldquo;whqprtw01&rdquo; (for HQ location) into the <strong>Computer</strong> field, and then click <strong>Connect.</strong>
+            <p class="l-note"><strong>Note:</strong>&nbsp;Print server names for the regional sites are:</p>
+            <ol class="bullet">
+                <li>&nbsp;CHI-PRT-W-V01 (Midwest) &ndash; 10.95.144.11</li>
+                <li>&nbsp;SFR-PRT-W-V01 (West) &ndash; 10.95.140.11</li>
+                <li>&nbsp;NYC-PRT-W-V01 (Northeast) &ndash; 10.95.142.11</li>
+                <li>&nbsp;WHQPRTW02 (Headquarters) &ndash; 10.96.42.32
+                    <p class="l-note" style="padding-left: -50em; text-indent: -3.2em;"><strong>Note:</strong>&nbsp;Please see the <a href="https://cfpbprod.servicenowservices.com/kb_view.do?sysparm_article=KB0010109" rel="nofollow"> Enhanced User Access Request SOP</a> for details on obtaining administrative access.</p>
+                </li>
+            </ol>
+        </li>
+        <li>On the <em>Windows Security </em>window, enter your ADM password into the first field, and then click the <strong>OK </strong>button.</li>
+        <li>On the CFPB Notice and Consent Banner, you need to read and fully understand the disclaimer. If you agree, click on the <strong>OK</strong> button.</li>
+        <li>Click the <strong>Start </strong>button in the lower left corner of the server desktop, and then select <strong>Print Management </strong>from the resulting pop-up menu.
+            <img src="/sys_attachment.do?sys_id=4bfdcb0e1b0d35908262eb1de54bcb13" width="586" height="313" class="img" />
+        </li>
+        <li>Click the <strong>Yes</strong> on the <em>User Account Control</em> dialog box.</li>
+        <li>The <em>Print Management Console</em> window will display. Expand the <strong>WHQPRTW02 (local)</strong> item.
+            <img src="/sys_attachment.do?sys_id=de1e874e1b0d35908262eb1de54bcbd6" width="237" height="233" class="img" />
+        </li>
+        <li>Select the <strong>Ports </strong> item from the four-item &ldquo;tree&rdquo; displayed below it.
+            <img src="/sys_attachment.do?sys_id=b13ecb4e1b0d35908262eb1de54bcbc8" width="315" height="208" class="img" />
+        </li>
+        <li>Choose an IP address that is within the subnet on the floor where you wish to add the new printer, but also one that is <em>not</em> currently being used (write down the applicable IP address). The last octet must be between 20 and 49.
+            <p class="l-note"><strong>Note:</strong>&nbsp;If you are unsure or experience issues, contact the Deskside Support Lead.</p>
+        </li>
+        <li style="padding-left: -1em;">Right-click on <strong>Printers</strong> in the tree under the <strong>WHQPRTW02 (local)</strong> item and then select the <strong>Add Printer </strong> option from the drop-down menu.
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="/sys_attachment.do?sys_id=cbb51f8a1b4d35908262eb1de54bcb22" width="298" height="194" class="img" />
+        </li>
+        <li style="padding-left: -1em;">When the <em>Printer Installation</em> window is displayed, select the <strong>Add a TCP/IP or Web Services Printer by IP address or hostname </strong> radio button option, and then click the <strong>Next </strong> button.
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="/sys_attachment.do?sys_id=00365b4a1b4d35908262eb1de54bcbbb" width="456" height="341" class="img" />
+            <p class="s1" style="padding-bottom: 10px;">When the <em>Printer Address </em>window displays, perform the following:</p>
+        </li>
+        <li style="padding-left: -1em;">Select the <strong>TCP/IP Device </strong> option from the <strong>Type of Device </strong> drop-down menu.</li>
+        <li style="padding-left: -1em;">Type the applicable IP address (do not use underscores) into the <strong>Host name or IP address </strong> field (this value will be auto-written into the <strong>Port name </strong> field as well).</li>
+        <li style="padding-left: -1em;">Click the <strong>Next</strong> button.
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="/sys_attachment.do?sys_id=0acc57ce1b8d35908262eb1de54bcb42" width="388" height="293" class="img" />
+            <p class="l-note"><strong>Note:</strong>&nbsp;The system will search to detect the applicable port. When it does, the <em>Additional port information required </em>window will display.</p>
+        </li>
+        <li style="padding-left: -1em;">In the <strong>Device Type </strong> frame, use the default values (<strong>Standard </strong> radio button option selected and <strong>Generic Network Card </strong> in the associated text field), and then click the <strong>Next</strong> button.
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="/sys_attachment.do?sys_id=9a8e13421bcd35908262eb1de54bcbce" width="463" height="359" class="img" />
+        </li>
+        <li style="padding-left: -1em;">On the <em>Printer Driver </em> window, select the <strong>Use an existing printer driver on the computer </strong> radio button option, select <strong>Xerox Global Print Driver PCL6</strong> and then click the <strong>Next</strong> button.
+            <img src="/sys_attachment.do?sys_id=2400efc21bcd35908262eb1de54bcbc9" width="374" height="282" class="img" />
+            <p class="l-note"><strong>Note:</strong>&nbsp;If the applicable driver is <em>not </em>available from the pick lists, perform the following process:</p>
+            <ol class="lower-a">
+                <li>&nbsp;Go to the standard support site for the printer being added.</li>
+                <li>&nbsp;Download the driver for the printer being added.</li>
+                <li>&nbsp;On the <em>Printer Installation </em>window, click the <strong>Have Disks </strong>button.</li>
+                <li>&nbsp;Navigate to the applicable driver file&rsquo;s location, and then select it.</li>
+                <li>&nbsp;Click the <strong>Next </strong>button.</li>
+            </ol>
+        </li>
+        <li style="padding-left: -1em;">On the <em>Printer Name Sharing Settings </em> window, the printer you defined will be displayed in both the <strong>Printer Name </strong> and <strong>Share Name </strong> fields.
+            <img src="/sys_attachment.do?sys_id=5290e3461bcd35908262eb1de54bcb81" width="409" height="301" class="img" />
+        </li>
+        <li style="padding-left: -1em;">In the <strong>Printer Name </strong> field, rename the printer in accordance with standard CFPB nomenclature rules (for this example, the printer might be renamed &ldquo;1700G_6013_XeroxVL&rdquo;), and then copy and paste that value into the <strong>Share Name </strong> field.
+            <p class="p-note"><strong>Note:</strong>&nbsp;The standard CFPB format is &lt;1700G&gt;_&lt;Room Number&gt;_&lt;Printer Model&gt;.</p>
+        </li>
+        <li style="padding-left: -1em;">Click the <strong>Next </strong> button to display the <em>Printer Found </em> window.</li>
+        <li style="padding-left: -1em;">Click the <strong>Next </strong> button to display the final window of the installation wizard to begin installing the driver and printer.</li>
+        <li style="padding-left: -1em;">Click the <strong>Finish </strong> button to complete the process.</li>
+    </ol>
+    <li id="3-0" class="s10" style="color: #243f60; font-size: 1.17em;">Default Black and White Printing<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+        <p class="s1">All printers should be configured to print in black and white by default.</p>
+        <ol class="numerical">
+            <li>From the print management console, right-click on the printer and select <strong>Properties&hellip;</li>
+<li>Select <strong>Preferences</strong>.
+                <img src="/sys_attachment.do?sys_id=cad12f861bcd35908262eb1de54bcb08" width="420" height="436" class="img" />
+            </li>
+            <li>>Under <strong>Xerox Black and White, </strong>select <strong>on </strong>from the dropdown menu.
+            </li>
+            <li>Select <strong>Apply </strong>then <strong>OK </strong>to save settings.</li>
+        </ol>
+        <li id="4-0" class="s10" style="color: #243f60; font-size: 1.17em;">Printing a Test Page and Creating the Printer Shortcut<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+            <p class="s1">Use the following procedure to a print test page and create the shortcut for the new network printer.
+                <ol class "numerical">
+                    <li>
+                        <p style="padding-top: 10pt; padding-left: 41pt; text-indent: -17pt; line-height: 135%; text-align: left;">After ensuring the new network printer has been properly added, set up and configured, attempt to connect to the printer and send a test page to the printer.</p>
+                    </li>
+                    <li>
+                        <p style="padding-left: 41pt; text-indent: -17pt; line-height: 135%; text-align: left;">After successfully printing a test page, create the new printer shortcut and place it in the appropriate location in the <strong>Shortcuts </strong>folder on the T<strong>:\ </strong>drive:</p>
+                    </li>
+                    <li>
+                        <p style="padding-left: 41pt; text-indent: -17pt; line-height: 115%; text-align: left;">Navigate directly to the print server from your computer using the following procedure:</p>
+                        <ol id="l6">
+                            <li>
+                                <p class="s3" style="padding-top: 8pt; padding-left: 61pt; text-indent: -17pt; line-height: 115%; text-align: left;">Click the <strong>Start </strong>button.</p>
+                            </li>
+                            <li>
+                                <p class="s3" style="padding-left: 61pt; text-indent: -17pt; line-height: 115%; text-align: left;">Type &ldquo;run&rdquo; in the search field and press the <strong>Enter </strong>key.</p>
+                            </li>
+                            <li>
+                                <p class="s3" style="padding-left: 61pt; text-indent: -17pt; line-height: 115%; text-align: left;">On the <strong>Run </strong>window, type &ldquo;whqprtw02&rdquo; in the <strong>Open </strong>field, and then press the <strong>Enter </strong>key.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p style="padding-top: 10pt; padding-left: 41pt; text-indent: -17pt; line-height: 170%; text-align: left;">Locate the network printer you just added in the listing, right-click on it, and then select the <strong>Create Shortcut </strong>option from the pop-up menu. (The shortcut will be created on your desktop.)</p>
+                    </li>
+                    <li>
+                        <p style="padding-left: 41pt; text-indent: -17pt; line-height: 11pt; text-align: left;">Locate the shortcut on your desktop and copy it.</p>
+                    </li>
+                    <li>
+                        <p style="padding-left: 41pt; text-indent: -17pt; line-height: 170%; text-align: left;">Navigate to the <strong>Shortcuts </strong>folder (<strong>T:\Shortcuts\PRINTERS</strong>), locate the appropriate subfolder (i.e., the correct location, building and floor), and paste the new shortcut into that subfolder</p>
+                    </li>
+                    <li>&nbsp;</li>
+                </ol>
+        </li>
+        <li id="5-0" class="s10" style="color: #243f60; font-size: 1.17em;">Enabling the Print Separator<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+            <p style="padding-top: 10pt; padding-left: 0pt; text-indent: 0pt; text-align: left;"><span id="mce_93"></span>After successfully printing a test page, the print separator page feature must be enabled.</p>
+            <ol id="l7">
+                <li>
+                    <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; text-align: left;">From the print management console, right-click on the printer and select <strong>Properties&hellip;</strong></p>
+                </li>
+                <li>
+                    <p style="padding-left: 41pt; text-indent: -17pt; text-align: left;">Select the <strong>Advanced </strong>tab, and then select <strong>Separator Page&hellip;</strong></p>
+                </li>
+                <li>&nbsp;</li>
+                <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=b9b533821b4175908262eb1de54bcb6b" width="363" height="409" /></li>
+                <li>
+                    <p style="padding-top: 4pt; padding-left: 41pt; text-indent: -17pt; text-align: left;">Select <strong>Browse&hellip; </strong>Select the <strong>sysprint </strong>SEP file from the list and then click <strong>Open</strong>.</p>
+                </li>
+                <li>&nbsp;</li>
+                <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=91a256561b05b5908262eb1de54bcb2a" width="489" height="366" /></li>
+                <li>
+                    <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; text-align: left;">Click <strong>OK </strong>to close out all open windows.</p>
+                </li>
+                <li>
+                    <p style="padding-left: 41pt; text-indent: -17pt; text-align: left;">Print a test page to the printer to ensure that the separator page prints as expected.</p>
+                </li>
+                <li>&nbsp;</li>
+            </ol>
+            <li id="6-0" class="s10" style="color: #243f60; font-size: 1.17em;">Restricting a printer<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+                <p style="padding-top: 5pt; padding-left: 0pt; text-indent: 0pt; text-align: left;"><span id="mce_93"></span>If a printer needs to be restricted for use by only specified users or groups:</p>
+                <ol id="l8">
+                    <li>
+                        <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">From the print management console, right-clickon the printer and select <strong>Properties&hellip;</strong></p>
+                    </li>
+                    <li>
+                        <p style="padding-left: 41pt; text-indent: -17pt; line-height: 150%; text-align: left;">Select the <strong>Security </strong>tab and remove any users or groups that should not have access to the printer from the <strong>Group or user names </strong>list (for this example, the <strong>Everyone </strong>group is present) by highlighting the name and clicking <strong>Remove</strong>.</p>
+                    </li>
+                    <li>&nbsp;</li>
+                    <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=5703d2961b05b5908262eb1de54bcb7f" width="589" height="346" /></li>
+                    <li>&nbsp;</li>
+                    <li>
+                        <p style="padding-top: 6pt; padding-left: 41pt; text-indent: -17pt; line-height: 120%; text-align: left;">Select <strong>Add.</strong> Begin typing the name of the user or group in the <strong>Enter the object names to select</strong> field, and then click <strong>Check Names</strong>.</p>
+                    </li>
+                    <li>&nbsp;</li>
+                    <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=e043d6961b05b5908262eb1de54bcb4c" width="538" height="292" /></li>
+                    <li>&nbsp;</li>
+                    <li>
+                        <p style="padding-top: 6pt; padding-left: 41pt; text-indent: -17pt; line-height: 100%; text-align: left;">Select the correct user or group from the list of matches. Click <strong>OK. </strong>The selected user or group will display on the <strong>Group or usernames </strong>list.</p>
+                    </li>
+                    <li>
+                        <p style="padding-top: 6pt; padding-left: 41pt; text-indent: -17pt; line-height: 120%; text-align: left;">Repeat steps 3 and 4 for any additional users or groups that need to be added.</p>
+                    </li>
+                    <li>
+                        <p style="padding-left: 41pt; text-indent: -17pt; text-align: left;">Click <strong>OK </strong>to save the changes and close the window.</p>
+                    </li>
+                    <li>&nbsp;</li>
+                </ol>
+                <li id="7-0" class="s10" style="color: #243f60; font-size: 1.17em;">List Printer in Directory<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+                    <ol id="l9">
+                        <li>
+                            <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Right click printer name</p>
+                        </li>
+                        <li>
+                            <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Click Manage sharing&hellip;</p>
+                        </li>
+                        <li>
+                            <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Check List in the directory</p>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=597356d61b05b5908262eb1de54bcb90" width="466" height="354" /></li>
+                        <li>&nbsp;</li>
+                    </ol>
+                    <li id="8-0" class="s10" style="color: #243f60; font-size: 1.17em;">SNMP Configuration for SolarWinds<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+                        <ol id="l10">
+                            <li>
+                                <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">From the print management console, right-click on the printer and select <strong>Properties&hellip;</strong></p>
+                            </li>
+                            <li>
+                                <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Select the <strong>Ports </strong>tab. Click <strong>Configure Port</strong></p>
+                            </li>
+                            <li>&nbsp;</li>
+                            <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=a2b35ad61b05b5908262eb1de54bcb98" width="428" height="484" /></li>
+                            <li>&nbsp;</li>
+                            <li>
+                                <p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Verify that <strong>SNMP Status Enabled </strong>option is unchecked. Click <strong>OK</strong>.</p>
+                            </li>
+                            <li>&nbsp;</li>
+                            <li style="text-align: center;"><img src="/sys_attachment.do?sys_id=41e31ed61b05b5908262eb1de54bcb21" width="404" height="432" /></li>
+                            <li>
+                                <p style="padding-top: 7pt; padding-left: 41pt; text-indent: -17pt; text-align: left;">Paste the printer&rsquo;s IP address into web browser to access the GUI.</p>
+                            </li>
+                        </ol>
+                        <p style="padding-top: 5pt; padding-left: 5pt; text-indent: 0pt; text-align: left;"><span id="mce_93"></span>The procedure for properly configuring the settings will depend on the brand of the printer. Below are individual protocol settings that are configured directly on the printer via Embedded Web Server (EWS)</p>
+                        <ol id="l10">
+                            <li>&nbsp;</li>
+                        </ol>
+                        <li id="9-0" class="s10" style="color: #243f60; font-size: 1.17em;">Xerox c505 Printers<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+                            <h1 style="padding-top: 5pt; text-indent: 0pt; text-align: left; padding-left: 40px;"><span style="font-size: 16.5pt; text-indent: -17pt;">SNMP<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+<ol id="l11">
+<li>
+<p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Login using admin credentials</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 41pt; text-indent: -17pt; line-height: 12pt; text-align: left;">Select connectivity &gt; SNMP</p>
+<ul id="l12">
+<li>
+<p class="s4" style="padding-top: 5pt; padding-left: 59pt; text-indent: -18pt; line-height: 11pt; text-align: left;">Disable SNMPv1/v2</p>
+</li>
+<li>&nbsp;</li>
+<li style="text-align: center;"><img src="/sys_attachment.do?sys_id=2f24d61a1b05b5908262eb1de54bcb1d" width="373" height="270" /></li>
+<li>&nbsp;</li>
+<li>
+<p class="s4" style="padding-left: 59pt; text-indent: -18pt; line-height: 11pt; text-align: left;">Enter <span class="s7">1700GSTNW </span><span style="color: #2d2d2d;">in the Authentication Password and Retype Password field</span>&nbsp;</p>
+                        </li>
+                        <li>
+                            <p class="s4" style="padding-left: 59pt; text-indent: -18pt; line-height: 11pt; text-align: left;">Set Message Encryption Algorithm to SHA-1</p>
+                        </li>
+                        <li>
+                            <p class="s4" style="padding-left: 59pt; text-indent: -18pt; line-height: 13pt; text-align: left;">Set Message Encryption Algorithm AES-128</p>
+                        </li>
+                        <li>
+                            <p class="s4" style="padding-left: 59pt; text-indent: -18pt; text-align: left;">Leave all other fields at their default value</p>
+                        </li>
+                        </ul>
+                    </li>
+                    <li>&nbsp;</li>
+</ol>
+<h1 style="padding-top: 5pt; text-indent: 0pt; text-align: left; padding-left: 40px;"><span style="font-size: 16.5pt; text-indent: -17pt;">LDAP<a class="s11" style="padding-top: 5pt;" href="#top" rel="nofollow">Back to top</a>
+<p style="padding-top: 5pt; padding-left: 5pt; text-indent: 0pt; text-align: left;"><span id="mce_93"></span>For <strong>LDAP </strong>configuration, enter account information to enable scan to email (contact Duane Young for credentials)</p>
+    <p style="padding-top: 5pt; padding-left: 5pt; text-indent: 0pt; text-align: left;">&nbsp;</p>
+    <p style="padding-top: 5pt; padding-left: 5pt; text-indent: 0pt; text-align: center;"><img src="/sys_attachment.do?sys_id=e274d25a1b05b5908262eb1de54bcb8a" width="324" height="466" class="img" />

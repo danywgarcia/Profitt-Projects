@@ -1,0 +1,7 @@
+Steps missing in the offboarding SOP for disabling, step 4-5 have items missing
+Step 5 is incorrect, there is no checkbox.
+
+Users are manually moved to the correct group. 
+
+Alfonso - SCCM item. goes to the software team
+

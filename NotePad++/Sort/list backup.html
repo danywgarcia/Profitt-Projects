@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+  }
+  div.page {
+    width: 900px;
+    display: block;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-size: 25px 25px;
+    background-image:
+    linear-gradient(to right, white 1px, transparent 1px),
+    linear-gradient(to bottom, white 1px, transparent 1px);
+  }
+.toc_container {
+  background: solid white;
+  border: 1px white;
+  display: block;
+  text-decoration: none;
+  padding-top: 0px;
+  padding-right: 100px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 665pt;
+  text-align: left;
+} 
+.col
+  {
+  width: 100%;
+  height: 200px;
+  padding-bottom:  20pt;
+  margin: 0;
+  margin-bottom:20px;
+  padding-top: 0px;
+}
+#col-1 {
+  height: 200px;
+  padding-bottom:  0pt;
+  margin: 0;
+  float: left;
+  background: white;
+}
+  h1 {
+    color: #243f60;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-size: 28pt;
+  }
+  h2 {
+    color: #243f60;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: center;
+    font-size: 24pt;
+  }
+  h3 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 20pt;
+  }
+  h4 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 18pt;
+  }
+  h5 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 16pt;
+    padding-left: 30pt; 
+    padding-right: 0pt;  
+    line-height: 135%; 
+    word-wrap: break-word; 
+    margin-left: auto; 
+    margin-right: auto;
+  }  
+  h6 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    padding-left: 50pt; 
+    padding-right: 0pt;  
+    line-height: 135%; 
+    word-wrap: break-word; 
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .p,
+  p {
+    color: black;
+    font-family: Georgia, serif;   
+	  text-indent: 0pt;
+	  text-align: justify;
+	  line-height: 125%;
+	  word-wrap: break-word;
+    padding-left: 0pt;
+    padding-right: 0pt;
+	  padding-top: 0pt;	
+	  margin-left: auto; 
+	  margin-right: auto;
+  }
+  .s1  {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 16px; 
+  }
+  .s2 {
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt; 
+    padding-left: 0pt; 
+    text-indent: 0pt; 
+    line-height: 125%; 
+    word-wrap: break-word; 
+    text-align: left; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .s3 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+  .s4 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s5 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s6 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s7 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+  .s8 {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 14pt;
+  }
+  .s9 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    font-size: 16pt;
+    padding-left: 0pt; 
+    padding-right: 0pt;  
+    line-height: 125%; 
+    word-wrap: break-word; 
+    margin-left: auto; 
+    margin-right: auto;
+  }  
+  .s10 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 0pt;
+    text-indent: 0pt;
+    text-align: left;
+    padding-left: 0pt; 
+    padding-right: 0pt;  
+    line-height: 105%; 
+    word-wrap: break-word; 
+    font-size: 14pt;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s11 {
+    color: #254b87;
+    font-family: Georgia, serif;
+    float:right;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+    vertical-align: bottom;
+    line-height: 18pt;
+  }
+  .s12 {
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 5pt; 
+    padding-left: 15pt; 
+    text-indent: 0pt; 
+    line-height: 125%; 
+    word-wrap: break-word; 
+  }
+  .a {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+/* unvisited link */
+a:link {
+  color: #254b87;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+li {
+  list-style-position: outside;
+  display: block;
+  word-wrap: break-word;
+  line-height: 135%;
+  font-color: black;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-align: left;
+  font-style: normal;
+  font-weight: none;
+  text-decoration: none;
+  padding-right: 40pt;
+  padding-left: 8px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ol.numerical > li:first-child {
+    counter-reset: item;
+}
+ol.numerical > li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.sub { 
+  counter-reset: item; 
+}
+ol.sub > li:before { 
+  counter-increment: item;
+  content: counters(item, ".") " ";
+  font-weight: none;
+  font-size: 14pt;
+}
+ol.upper-I > li:first-child {
+    counter-reset: r1 0;
+    counter-increment: r1 0;
+}
+ol.upper-I > li:before {
+  counter-increment: r1;
+  content: counter(r1, upper-roman) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.lower-i > li:first-child {
+    counter-reset: r1 0;
+    counter-increment: r1 0;
+}
+ol.lower-i > li:before {
+  counter-increment: r1;
+  content: counter(r1, lower-roman) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.upper-A > li:first-child {
+    counter-reset: n1 0;
+    counter-increment: n1 0;
+}
+ol.upper-A > li:before {
+  counter-increment: n1;
+  content: counter(n1, upper-latin) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ol.lower-a > li:first-child {
+    counter-reset: n1 0;
+    counter-increment: n1 0;
+}
+ol.lower-a > li:before {
+  counter-increment: n1;
+  content: counter(n1, lower-latin) ". ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ .bullet > li:first-child {
+    counter-reset: b1 0;
+    counter-increment: b1 0;
+}
+ .bullet > li:before {
+  counter-increment: b1;
+  content: counter(b1, disc) " ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ .circle > li:first-child {
+    counter-reset: c1 0;
+    counter-increment: c1 0;
+}
+ .circle > li:before {
+  counter-increment: c1;
+  content: counter(c1, circle) " ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ .dash > li:first-child {
+    counter-reset: d1 0;
+    counter-increment: d1 0;
+}
+ .dash > li:before {
+  counter-increment: d1;
+  content: "- ";
+  font-weight: bold;
+  font-size: 17px;
+}
+ .square > li:first-child {
+    counter-reset: s1 0;
+    counter-increment: s1 0;
+}
+ .square > li:before {
+  counter-increment: s1;
+  content: counter(s1, square) " ";
+  font-weight: bold;
+  font-size: 12px;
+}
+ol.appendix > li:first-child {
+    counter-reset: item;
+}
+ol.appendix > li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+  font-weight: bold;
+  font-size: 17px;
+}
+</style>
+</head>
+<body>
+<div class="page">
+<h1>The list-style-type rules.</h1>
+<p class="s1">Use a numbered list if you want to display items in a numbered series.</p>
+<ol class="numerical">
+<li>Contact the vendor to report the supply need, providing as much detail as possible.</li>
+<li>Staff must ensure proper documentation of the issue prior to contacting the appropriate vendor. To do this, open ServiceNow and search for a ticket referring to the issue.</li>
+<ol class="numerical">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+</ol>
+</ol>
+<p class="s1">Use different lists throughtout the document.</p>
+<ol class="upper-A">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="lower-a">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="upper-I">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="lower-i">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="bullet">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="circle">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="dash">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+<ol class="square">
+<li>Use the same CSS</li>
+<li>This will make it easier to make multiple lists.</li>
+</ol>
+</div>
+</body>
+</html>

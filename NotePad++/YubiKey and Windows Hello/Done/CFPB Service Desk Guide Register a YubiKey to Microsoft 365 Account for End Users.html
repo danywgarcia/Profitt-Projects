@@ -1,0 +1,500 @@
+<style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+  }
+
+  div.page {
+    width: 880px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    background-size: 25px 25px;
+    background-image:
+    linear-gradient(to right, solid white 1px, transparent 1px),
+    linear-gradient(to bottom, solid white 1px, transparent 1px);
+  }
+
+  toc .toc_container {
+    background: none;
+    border: 1px solid white;
+    display: table;
+    font-size: 100%;
+    margin-bottom: 1em;
+    padding: 5px;
+    width: 470pt;
+  }
+
+  .toc_title {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h1 {
+    color: #404040;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24pt;
+  }
+
+  h2 {
+    color: #404040;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18pt;
+  }
+
+  h3 {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14pt;
+  }
+
+  .p,
+  p {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+    margin: 3px;
+    padding-left: 15px;
+    padding-right: 80px;
+  }
+
+  .s1 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  .s2 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s3 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  .s4 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s5 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s7 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s8 {
+    color: #292929;
+    font-family: "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s9 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  .s10 {
+    color: black;
+    font-family: "Courier New", monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11pt;
+  }
+
+  .a {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 10.5pt;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l1 {
+    padding-left: 0pt;
+    counter-reset: c1 1;
+  }
+
+  #l1>li>*:first-child:before {
+    counter-increment: c1;
+    content: counter(c1, decimal)". ";
+    color: black;
+    list-style-position: inside;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-size: 11.5pt;
+  }
+
+  #l1>li:first-child>*:first-child:before {
+    counter-increment: c1 0;
+  }
+
+  #l2 {
+    padding-left: 15pt;
+  }
+
+  #l2>li>*:first-child:before {
+    content: " ";
+    color: #2D2D2D;
+    font-family: Symbol, serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l3 {
+    padding-left: 0pt;
+    counter-reset: d1 1;
+  }
+
+  #l3>li>*:first-child:before {
+    counter-increment: d1;
+    content: counter(d1, upper-latin)". ";
+    color: #292929;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  #l3>li:first-child>*:first-child:before {
+    counter-increment: d1 0;
+  }
+
+  #l4 {
+    padding-left: 0pt;
+    counter-reset: e1 1;
+  }
+
+  #l4>li>*:first-child:before {
+    counter-increment: e1;
+    content: counter(e1, decimal)". ";
+    color: black;
+    list-style-position: inside;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-size: 11.5pt;
+  }
+
+  #l4>li:first-child>*:first-child:before {
+    counter-increment: e1 0;
+  }
+
+  #l5 {
+    padding-left: 0pt;
+    counter-reset: f1 1;
+  }
+
+  #l5>li>*:first-child:before {
+    counter-increment: f1;
+    content: counter(f1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l5>li:first-child>*:first-child:before {
+    counter-increment: f1 0;
+  }
+
+  #l6 {
+    padding-left: 0pt;
+    counter-reset: f2 1;
+  }
+
+  #l6>li>*:first-child:before {
+    counter-increment: f2;
+    content: counter(f2, lower-latin)". ";
+    color: #2D2D2D;
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  #l6>li:first-child>*:first-child:before {
+    counter-increment: f2 0;
+  }
+
+  #l7 {
+    padding-left: 0pt;
+    counter-reset: g1 1;
+  }
+
+  #l7>li>*:first-child:before {
+    counter-increment: g1;
+    content: counter(g1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l7>li:first-child>*:first-child:before {
+    counter-increment: g1 0;
+  }
+
+  #l8 {
+    padding-left: 0pt;
+    counter-reset: h1 1;
+  }
+
+  #l8>li>*:first-child:before {
+    counter-increment: h1;
+    content: counter(h1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l8>li:first-child>*:first-child:before {
+    counter-increment: h1 0;
+  }
+
+  #l9 {
+    padding-left: 0pt;
+    counter-reset: i1 1;
+  }
+
+  #l9>li>*:first-child:before {
+    counter-increment: i1;
+    content: counter(i1, decimal)". ";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l9>li:first-child>*:first-child:before {
+    counter-increment: i1 0;
+  }
+
+  #l10 {
+    padding-left: 0pt;
+    counter-reset: j1 1;
+  }
+
+  #l10>li>*:first-child:before {
+    counter-increment: j1;
+    content: counter(j1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l10>li:first-child>*:first-child:before {
+    counter-increment: j1 0;
+  }
+
+  #l11 {
+    padding-left: 0pt;
+    counter-reset: k1 1;
+  }
+
+  #l11>li>*:first-child:before {
+    counter-increment: k1;
+    content: counter(k1, decimal)". ";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l11>li:first-child>*:first-child:before {
+    counter-increment: k1 0;
+  }
+
+  #l12 {
+    padding-left: 0pt;
+  }
+
+  #l12>li>*:first-child:before {
+    content: " ";
+    color: black;
+    font-family: Symbol, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+</style>
+<div class="page">
+<h1 style="padding-top: 10pt; text-indent: 5pt; text-align: center; font-weight: bold; color: #1fa040;">CFPB Service Desk Guide:</h1>
+<h2 style="padding-top: 10pt; text-indent: 5pt; text-align: center; font-weight: bold; color: #1fa040;">Register a YubiKey to Microsoft 365 Account</h2>
+<h3 style="padding-top: 10pt; text-indent: 5pt; text-align: left; font-weight: bold; color: #243f60;">Security Information Access of User Account</h3>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 0pt; line-height: 100%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">This document covers accessing a user's account to register their YubiKey <u><strong>during the onboarding process</strong></u>. Local users can pick their equipment and remote users will have their laptop shipped.</p>
+<ol id="l1">
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;On your laptop, <em>log in</em> to your <strong>ADM profile</strong> to reset the user&rsquo;s password.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Log in</em> to the <strong>user&rsquo;s computer</strong> with <em><u>their</u></em> credentials.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 26pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Open</em> a <strong>browser window</strong> and <em>navigate</em> to <a style="font-family: Georgia, serif; color: blue; font-style: italic;" href="https://myprofile.microsoft.com" target="_blank" rel="noopener noreferrer nofollow"><em>myprofile.microsoft.com</em></a>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=09d87b0d1b69f950dbc743f1f54bcb35" width="671" height="230" /></p>
+<p style="padding-top: 10pt; padding-left: 50pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;Depending on the browser, Google Chrome (preferred) or Microsoft Edge, screenshots moving<br /><span style="padding-top: 5pt; padding-left: 38pt; text-indent: 10pt; line-height: 150%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> forward may vary.</span></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 27pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Log</em> into <strong>Office365</strong> in your browser.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=fad8bb0d1b69f950dbc743f1f54bcb21" width="206" height="188" /></p>
+<p style="padding-top: 10pt; padding-left: 50pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong> If you are already logged into Office 365 in your browser, you will see the Overview tab and you<br /><span style="padding-top: 5pt; padding-left: 40pt; text-indent: 10pt; line-height: 150%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> can <a href="#Step8" rel="nofollow">skip to Step 8</a>.</span></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 20pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Enter the</em> user's <strong>CFPB email address</strong> and<em> click</em> '<strong>Next</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=ff797b4d1b69f950dbc743f1f54bcbc8" width="206" height="188" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;In the <strong>Enter password</strong> window, enter the <strong>Temporary Access Pass</strong> created in Step 1.</p>
+<p style="padding-top: 10pt; padding-left: 49pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;You can <em>check</em> the box "<strong>Show Temporary Access Pass</strong>" to confirm the password.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Click</em> <strong>Sign in</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=8e993f4d1b69f950dbc743f1f54bcb79" width="235" height="197" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="/sys_attachment.do?sys_id=55b9f38d1b69f950dbc743f1f54bcbfd" width="270" height="192" /></p>
+<p style="padding-top: 10pt; padding-left: 49pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;If prompted, <em>check</em> the box for &lsquo;<strong>Don&rsquo;t show this again</strong>&rsquo; and <em>click</em> <strong>Yes</strong> to stay signed in.</p>
+</li>
+<li>
+<p id="Step8" style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp; Once logged in, <em>select</em> '<strong>Security info</strong>' from menu on the left.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=3fd93b8d1b69f950dbc743f1f54bcb73" width="362" height="250" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Select</em> '<strong>Add sign-in method</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=ea3a7f8d1b69f950dbc743f1f54bcb87" width="387" height="124" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 17pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Choose</em> '<strong>Security key</strong>' from the dropdown.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=ce4a37cd1b69f950dbc743f1f54bcb34" width="355" height="155" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 17pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp; <em>Click</em> '<strong>Add</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=035a33cd1b69f950dbc743f1f54bcba5" width="359" height="161" /></p>
+<p style="padding-top: 10pt; padding-left: 25pt; text-indent: 25pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;If prompted with an additional window labeled <strong>Security Key</strong> with the message '<strong>To set up <br /><span style="padding-top: 5pt; padding-left: 63pt; text-indent: 15pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">a security key, you need to sign in with two-factor authentication</span></strong>'. <em>Click</em> '<strong>Next</strong>' and<br /><span style="padding-top: 5pt; padding-left: 63pt; text-indent: 15pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> log in with your PIV card.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=23cab3011ba9f950dbc743f1f54bcb9a" width="591" height="157" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 17pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp; <em>Choose</em> '<strong>USB device</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=87daffcd1b69f950dbc743f1f54bcb10" width="283" height="126" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 17pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp; In the <strong>Security Key</strong> window, <em>insert</em> your security key, then <em>select </em>'<strong>Next</strong>' The Security Key window will<br /><span style="padding-top: 5pt; padding-left: 40pt; text-indent: 10pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> redirect you to the PIN setup wizard.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=75eaf3011ba9f950dbc743f1f54bcb19" width="662" height="157" /></p>
+<p style="padding-top: 10pt; padding-left: 68pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;If the <strong>Create a passkey on a phone or tablet</strong> window appears, <em>click</em> on &lsquo;<strong>Use a different<br /><span style="padding-top: 5pt; padding-left: 37pt; text-indent: 10pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> device</span></strong>&rsquo; and then <em>click</em> on &lsquo;<strong>External security key or built-in sensor</strong>&rsquo;.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=c3fa7b011ba9f950dbc743f1f54bcb20" width="643" height="286" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 21pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;On the <strong>Security key</strong> setup prompt, <em>click</em> &lsquo;<strong>Ok</strong>&rsquo; to continue.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=ba0bf3011ba9f950dbc743f1f54bcb63" width="664" height="196" /></p>
+<p style="padding-top: 10pt; padding-left: 68pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;Depending on the browser, the message stating where the request (Windows or Google)<br /><span style="padding-top: 5pt; padding-left: 37pt; text-indent: 10pt; line-height: 150%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> comes from and publisher will be stated.</span></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;In the <strong>Pin required</strong> screen, <em>enter</em> <u>17001700</u> (default pin) in the <strong>PIN</strong> and <strong>Confirm PIN</strong> fields and<br /><span style="padding-top: 5pt; padding-left: 35pt; text-indent: 10pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> <em>click</em> <strong>Next</strong>.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=a50dbb451ba9f950dbc743f1f54bcb89" width="276" height="212" /></p>
+<p style="padding-top: 10pt; padding-left: 68pt; text-indent: 0pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;If prompted with a message '<strong>To set up a security key, you need to sign in with two-factor authentication</strong>', <em>click</em> <strong>Next</strong> and log in with your PIV card.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Create</em> a new pin for the YubiKey.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=e30dbb451ba9f950dbc743f1f54bcb5a" width="277" height="201" /></p>
+<p style="padding-top: 10pt; padding-left: 68pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;It is possible to use the same <strong>PIN</strong> code as your current <strong>PIV</strong> PIN.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Click</em> '<strong>OK</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=e30dbb451ba9f950dbc743f1f54bcb5a" width="277" height="201" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Touch</em> the <strong>metal tab</strong> (a gold strip on the side or gold circle) on your YubiKey to verify user presence <br /><span style="padding-top: 5pt; padding-left: 35pt; text-indent: 10pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> when prompted.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=645d73851ba9f950dbc743f1f54bcb64" width="531" height="164" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Depending on your browser, <em>click</em> '<strong>Allow</strong>' at the '<em>Allow this site to see your security key?</em>' prompt, <br /><span style="padding-top: 5pt; padding-left: 35pt; text-indent: 10pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> or '<strong>OK</strong>' at the '<em>Continue setup</em>' prompt to proceed. </span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=ce7d73851ba9f950dbc743f1f54bcbbb" width="541" height="185" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;At the <strong>Security Key</strong> prompt, c<em>reate</em> a descriptive name for your YubiKey and click &lsquo;<strong>Next</strong>&rsquo;.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=fa8d3b851ba9f950dbc743f1f54bcba7" width="281" height="117" /></p>
+<p style="padding-top: 10pt; padding-left: 68pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;There are no naming requirements.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Click</em> &lsquo;<strong>Done</strong>&rsquo; to complete enrollment.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=f49d3b851ba9f950dbc743f1f54bcbb5" width="296" height="163" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Verify</em> that the newly added YubiKey appears in the <strong>Security info</strong> section.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 70%;"><img src="/sys_attachment.do?sys_id=c79df7851ba9f950dbc743f1f54bcb0b" width="294" height="159" /></p>
+<p style="padding-top: 10pt; padding-bottom: 20pt; padding-left: 15pt; text-indent: 10pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><strong>Note:</strong>&nbsp;Provide the default PIN to the user when assisting them with setting up their new laptop during<br /><span style="padding-top: 5pt; padding-left: 50pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> training or onboarding appointment. To assist a user with changing their PIN in their Windows or<br /><span style="padding-top: 5pt; padding-left: 50pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> Mac device, use the <a href="https://cfpbprod.servicenowservices.com/kb_view.do?sysparm_article=KB0014067" target="_blank" rel="noopener noreferrer nofollow">CFPB Service Desk Guide: Change YubiKey PIN for End Users</a> instructions.</span></span></p>
+</li>
+</ol>
+</div>

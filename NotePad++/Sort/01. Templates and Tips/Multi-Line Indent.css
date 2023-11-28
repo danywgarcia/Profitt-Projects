@@ -1,0 +1,20 @@
+.surveyorderedlist{
+        ol{
+            list-style-position: outside;
+        }
+        li{
+            margin-bottom:5px;
+            margin-left:40px;
+            padding-left:8px;
+        }
+    }
+	
+	<div class="surveyorderedlist">
+            <span><b>Conditions imposed</b></span>
+            <ol>
+                <li>Names and addresses are accessed only by the Financial Service Provider on its own behalf, and solely for its own use;</li>
+                <li>Names and addresses may only be accessed for a specified purpose;</li>
+                <li>The fees charged for the provision of the names and addresses from the Motor Vehicle Register (MVR) are duly paid;</li>
+                <li>Any instances of unauthorised access must immediately be notified to the Secretary for Transport and the Privacy Commissioner; </li>
+            </ol>
+</div>

@@ -1,0 +1,63 @@
+<html>
+ <head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style id="compiled-css" type="text/css">
+.app-lst {<!--from  www  .jav a  2s  . co m-->
+   display:block;
+   height:501px;
+   list-style-type:none;
+   margin:0;
+   padding:0;
+}
+
+.app-lst li {
+   display:inline-block;
+   float:left;
+   margin:0;
+   padding:0;
+}
+
+.item-1, .item-2 {
+   height:76%;
+}
+
+.item-1 {
+   width:76%;
+}
+
+.item-2 {
+   width:26%;
+}
+
+.item-3, .item-4, .item-5 {
+   height:26%;
+}
+
+.item-3 {
+   width:11%;
+}
+
+.item-4 {
+   width:21%;
+}
+
+.item-5 {
+   width:71%;
+}
+
+.app-lst li img {
+   height:100%;
+   width:100%;
+}
+</style> 
+ </head> 
+ <body> 
+  <ul class="app-lst"> 
+   <li class="item-1"> <a href="#"> <img src="https://www.java2s.com/style/demo/Firefox.png" alt="img"> </a> </li> 
+   <li class="item-2"> <a href="#"> <img src="https://www.java2s.com/style/demo/Safari.png" alt="img"> </a> </li> 
+   <li class="item-3"> <a href="#"> <img src="https://www.java2s.com/style/demo/Google-Chrome.png" alt="img"> </a> </li> 
+   <li class="item-4"> <a href="#"> <img src="https://www.java2s.com/style/demo/InternetExplorer.png" alt="img"> </a> </li> 
+   <li class="item-5"> <a href="#"> <img src="https://www.java2s.com/style/demo/Google-Chrome.png" alt="img"> </a> </li> 
+  </ul>  
+ </body>
+</html>
