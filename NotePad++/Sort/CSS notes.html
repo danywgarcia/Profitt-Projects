@@ -1,0 +1,41 @@
+List - best if used in the list parent, child lists should be augmented slightly to fit needs. 
+margin: 0.3em 10em 0.3em 0em;
+padding: .3em 3em .2em .4em; 
+margin: 
+First em  - Top spacing, when used in list classes, it affects where the numbers end up, resulting in cascading effect.
+Second em - Right spacing, indents list in from the right, limits how far right a list can reach.
+Third em  - Bottom  spacing, (affects the indent for list items to wrap. when used in list classes, when used in list class, affects where the numbers end up, resulting in cascading effect.
+fourth em - Left spacing,  indents the list from the left, when used in list class, it affects indent but also for wrapping. 
+ padding: 
+First em - Top padding, expands the space above between list items, when used in list class, it affects indent, cascades numbers, etc. 
+Second em - Right padding, sets where a sentence will word wrap. 
+Third em - Bottom padding, expands the space on the bottom between list items, when used in list class, affects where the numbers end up, resulting in cascading effect. 
+Fourth em  - Left padding, indents the list items, sets where a list item will begin.
+
+Helps with wrapping
+p style="text-indent: -11.5em; margin-left: 12.5em;"
+
+For images, use margin-left
+
+Keeps Notes for P and L wrapped because of the width element
+.p-note {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  word-wrap: break-word;
+  text-indent: -3.2em;
+  width: 60em;
+  float: left;
+  margin: .2em 10em 2em 0em;
+  padding: .2em 3em 0em 1.7em;
+}
+.l-note {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  word-wrap: break-word;
+  text-indent: -3.1em;
+  width: 50em;
+  margin: .1em 3em .1em 6em;
+  padding: .1em 0em .1em 0em;
+}

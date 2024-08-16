@@ -1,0 +1,398 @@
+<style type="text/css">
+* {
+margin: 0;
+padding: 0;
+text-indent: 0;
+}
+
+div.page {
+width: 880px;
+border: 1px solid white;
+padding-top: 5px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+background-size: 25px 25px;
+background-image:
+linear-gradient(to right, solid white, transparent 1px),
+linear-gradient(to bottom, solid white, transparent 1px);;
+}
+
+toc .toc_container {
+background: none;
+border: 1px solid white;
+display: table;
+font-size: 100%;
+margin-bottom: 1em;
+padding: 5px;
+width: 470pt;
+}
+
+.toc_title {
+font-weight: 700;
+text-align: center;
+}
+
+h1 {
+color: #404040;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 24pt;
+}
+
+h2 {
+color: #404040;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 18pt;
+}
+
+h3 {
+color: #292929;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 14pt;
+}
+
+.p,
+p {
+color: #292929;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 12pt;
+margin: 3px;
+padding-left: 15px;
+padding-right: 80px;
+}
+
+.s1 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+.s2 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s3 {
+color: #2D2D2D;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+.s4 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s5 {
+color: #1F8476;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s7 {
+color: #2D2D2D;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s8 {
+color: #292929;
+font-family: "Times New Roman", serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s9 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 12pt;
+}
+
+.s10 {
+color: black;
+font-family: "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11pt;
+}
+
+.a {
+color: #1F8476;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: underline;
+font-size: 10.5pt;
+}
+
+li {
+display: block;
+}
+
+#l1 {
+padding-left: 0pt;
+counter-reset: c1 1;
+}
+
+#l1>li>*:first-child:before {
+counter-increment: c1;
+content: counter(c1, decimal)". ";
+color: black;
+list-style-position: inside;
+font-family: Georgia, serif;
+font-style: normal;
+font-size: 11.5pt;
+}
+
+#l1>li:first-child>*:first-child:before {
+counter-increment: c1 0;
+}
+
+#l2 {
+padding-left: 15pt;
+}
+
+#l2>li>*:first-child:before {
+content: " ";
+color: #2D2D2D;
+font-family: Symbol, serif;
+font-style: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l3 {
+padding-left: 0pt;
+counter-reset: d1 1;
+}
+
+#l3>li>*:first-child:before {
+counter-increment: d1;
+content: counter(d1, upper-latin)". ";
+color: #292929;
+font-family: Georgia, sans-serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+#l3>li:first-child>*:first-child:before {
+counter-increment: d1 0;
+}
+
+#l4 {
+padding-left: 0pt;
+counter-reset: e1 1;
+}
+
+#l4>li>*:first-child:before {
+counter-increment: e1;
+content: counter(e1, decimal)". ";
+color: black;
+list-style-position: inside;
+font-family: Georgia, serif;
+font-style: normal;
+font-size: 11.5pt;
+}
+
+#l4>li:first-child>*:first-child:before {
+counter-increment: e1 0;
+}
+
+#l5 {
+padding-left: 0pt;
+counter-reset: f1 1;
+}
+
+#l5>li>*:first-child:before {
+counter-increment: f1;
+content: counter(f1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l5>li:first-child>*:first-child:before {
+counter-increment: f1 0;
+}
+
+#l6 {
+padding-left: 0pt;
+counter-reset: f2 1;
+}
+
+#l6>li>*:first-child:before {
+counter-increment: f2;
+content: counter(f2, lower-latin)". ";
+color: #2D2D2D;
+font-family: Georgia, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+#l6>li:first-child>*:first-child:before {
+counter-increment: f2 0;
+}
+
+#l7 {
+padding-left: 0pt;
+counter-reset: g1 1;
+}
+
+#l7>li>*:first-child:before {
+counter-increment: g1;
+content: counter(g1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l7>li:first-child>*:first-child:before {
+counter-increment: g1 0;
+}
+
+#l8 {
+padding-left: 0pt;
+counter-reset: h1 1;
+}
+
+#l8>li>*:first-child:before {
+counter-increment: h1;
+content: counter(h1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l8>li:first-child>*:first-child:before {
+counter-increment: h1 0;
+}
+
+#l9 {
+padding-left: 0pt;
+counter-reset: i1 1;
+}
+
+#l9>li>*:first-child:before {
+counter-increment: i1;
+content: counter(i1, decimal)". ";
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l9>li:first-child>*:first-child:before {
+counter-increment: i1 0;
+}
+
+#l10 {
+padding-left: 0pt;
+counter-reset: j1 1;
+}
+
+#l10>li>*:first-child:before {
+counter-increment: j1;
+content: counter(j1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l10>li:first-child>*:first-child:before {
+counter-increment: j1 0;
+}
+
+#l11 {
+padding-left: 0pt;
+counter-reset: k1 1;
+}
+
+#l11>li>*:first-child:before {
+counter-increment: k1;
+content: counter(k1, decimal)". ";
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l11>li:first-child>*:first-child:before {
+counter-increment: k1 0;
+}
+
+#l12 {
+padding-left: 0pt;
+}
+
+#l12>li>*:first-child:before {
+content: " ";
+color: black;
+font-family: Symbol, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+</style>
+<div class="page">
+<h1 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">CFPB Service Desk Guide:</h1>
+<h2 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">ENF Trial Device Setup Instructions </h2>
+</style></head><body><p class="s1" style="padding-left: 21pt;text-indent: 0pt;line-height: 23pt;text-align: left;">CFPB ENF Trial Device Setup Instructions</p><h4 style="padding-top: 9pt;padding-left: 21pt;text-indent: 0pt;text-align: left;">Printers – HP M234 (B&amp;W) and HP M479 (color)</h4><ol id="l1"><li data-list-text="A."><h4 style="padding-top: 8pt;padding-left: 56pt;text-indent: -17pt;text-align: left;">Connecting to a CFPB Laptop</h4><ol id="l2"><li data-list-text="1."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Users should be aware that connection of the HP printer to a CFPB Laptop can only be done via a USB connection</p></li><li data-list-text="2."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">A user should find the associated USB cable, which should have come with the printer and connect it between the user’s CFPB laptop and the printer itself</p></li><li data-list-text="3."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Users may <u>not</u> connect to the printer via WiFi or a Network, although this capability will be available on the printer, it should be avoided.</p><ol id="l3"><li data-list-text="a."><p style="padding-left: 111pt;text-indent: -18pt;line-height: 112%;text-align: left;">Avoid using the HP smart app both the desktop and mobile app for any printing or scanning</p></li><li data-list-text="b."><p style="padding-left: 111pt;text-indent: -18pt;line-height: 13pt;text-align: left;">Do not connect to the printer via Wi-Fi and only use the HP M234sdw with CFPB</p><p style="padding-left: 111pt;text-indent: 0pt;text-align: left;">devices</p><ol id="l4"><li data-list-text="i."><p style="padding-top: 1pt;padding-left: 147pt;text-indent: -14pt;text-align: left;">Mobile printing capabilities are prohibited including</p><ol id="l5"><li data-list-text="1."><p style="padding-left: 183pt;text-indent: -18pt;text-align: left;">Apple AirPrint</p></li><li data-list-text="2."><p style="padding-top: 1pt;padding-left: 183pt;text-indent: -18pt;text-align: left;">HP Smart App</p></li><li data-list-text="3."><p style="padding-left: 183pt;text-indent: -18pt;text-align: left;">Mopria</p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s3" style="text-indent: 0pt;line-height: 11pt;text-align: left;">USB Port</p><p style="text-indent: 0pt;text-align: left;"/><p class="s3" style="text-indent: 0pt;line-height: 11pt;text-align: left;">Power Port</p><p style="text-indent: 0pt;text-align: left;"/></li><li data-list-text="4."><p style="padding-top: 1pt;padding-left: 183pt;text-indent: -18pt;text-align: left;">Wi-Fi Direct Printing</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li></ol></li></ol></li></ol></li></ol></li><li data-list-text="B."><h4 style="padding-left: 35pt;text-indent: -14pt;text-align: left;">Installing the Required Driver(s)</h4><ol id="l6"><li data-list-text="1."><p style="padding-top: 8pt;padding-left: 57pt;text-indent: -17pt;line-height: 107%;text-align: left;">Users should find the Windows button (<span class="s4"> </span>icon) located on their CFPB laptop keyboard, and press it</p></li><li data-list-text="2."><p style="padding-left: 57pt;text-indent: -17pt;line-height: 107%;text-align: left;">This action will prompt the Start menu to appear from the bottom left of the user’s laptop screen</p></li><li data-list-text="3."><p style="padding-left: 56pt;text-indent: -17pt;line-height: 107%;text-align: left;">A user should locate the Software Center icon which may appear to the right of the Start Menu under Productivity or can be searched by starting to type “Software Center”</p></li><li data-list-text="4."><p style="padding-left: 56pt;text-indent: -17pt;text-align: left;">Select the icon for Software Center to open the application</p></li><li data-list-text="5."><p style="padding-left: 56pt;text-indent: -17pt;text-align: left;">Users will navigate to Applications found along the left side of the Software Center, and select it</p></li><li data-list-text="6."><p style="padding-top: 1pt;padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">The Application page will open, and the user should look for the HP LaserJet MFP M234sdw/479</p><ol id="l7"><li data-list-text="a."><p style="padding-left: 92pt;text-indent: -17pt;line-height: 107%;text-align: left;">Users may see the HP LaserJet MFP M234sdw or 479 software listed within the body of the Application page</p></li><li data-list-text="b."><p style="padding-left: 93pt;text-indent: -17pt;line-height: 112%;text-align: left;">Or users may navigate to the upper right of the page and find the Search bar and use it to search for the software to be installed</p></li><li data-list-text="c."><p style="padding-left: 92pt;text-indent: -17pt;line-height: 13pt;text-align: left;">The user should ensure that the printer is connected to the user’s laptop and powered</p><p style="padding-left: 93pt;text-indent: 0pt;text-align: left;">on</p><ol id="l8"><li data-list-text="i."><p style="padding-left: 129pt;text-indent: -14pt;line-height: 107%;text-align: left;"><span class="p">This </span><span class="s5" style=" background-color: #FF0;">must</span><span class="p"> be confirmed, or the next steps will not work as intended. (HP 234 ONLY, HP 479 drivers can be pre-installed without being connected)</span></p></li></ol></li><li data-list-text="d."><p style="padding-left: 93pt;text-indent: -17pt;line-height: 107%;text-align: left;">Once the software has been found, the user should first click on the software icon then select the Install button and wait for installation to complete. This should take a few minutes and users should attend the process, not letting the laptop close, lose power or fall asleep.</p></li><li data-list-text="e."><p style="padding-left: 92pt;text-indent: -17pt;line-height: 107%;text-align: left;">When the installation is complete, the user will see that the HP LaserJet MFP M234sdw/479 status is Installed</p></li></ol></li></ol></li></ol><p class="s6" style="padding-top: 7pt;padding-left: 57pt;text-indent: 0pt;text-align: left;">*HP 479 only works for printing via this method. Please reach out to a user with the installed software necessary for scanning or contact Rafael Samonte for assistance</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 145pt;text-indent: 0pt;text-align: left;"><span/></p><p style="padding-top: 4pt;text-indent: 0pt;text-align: right;"><span class="s7" style=" background-color: #030303;">■</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;line-height: 17pt;text-align: left;"><span class="h3" style=" background-color: #26AC44;">cfpb</span></p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 67pt;text-indent: 0pt;text-align: left;"><span class="s8" style=" background-color: #26AC44;">Consumer Financia</span><span class="s9">l </span><span class="s8" style=" background-color: #26AC44;">Protection Bureau</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-top: 4pt;padding-left: 25pt;text-indent: 0pt;text-align: left;"><span class="s10" style=" background-color: #46B860;">Ii</span><span class="s11">i </span><span class="s12" style=" background-color: #26AC44;">App</span><span class="s13" style=" background-color: #26AC44;">l</span><span class="s12" style=" background-color: #26AC44;">icat</span><span class="s14" style=" background-color: #26AC44;">i</span><span class="s12" style=" background-color: #26AC44;">ons</span></p><p class="s16" style="padding-top: 6pt;padding-left: 25pt;text-indent: 0pt;text-align: left;"><span class="s15">C </span>Upd<span style=" color: #362831;">a</span>te<span style=" color: #362831;">s</span></p><p class="s17" style="padding-top: 8pt;padding-left: 25pt;text-indent: 0pt;text-align: left;"><span class="s18">[o </span>Op<span style=" color: #262B4F;">e</span><span style=" color: #702F0E;">r</span>a<span style=" color: #46414F;">t</span><span style=" color: #054990;">i</span><span style=" color: #46414F;">n</span>g <span style=" color: #46414F;">Sy</span><span style=" color: #262B4F;">s</span>te<span style=" color: #46414F;">m</span>s</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s22" style="text-indent: 0pt;line-height: 7pt;text-align: left;"><span class="s17">l;o </span>D<span style=" color: #362831;">e</span>v<span style=" color: #49030C;">i</span>c<span style=" color: #362831;">e </span>c<span style=" color: #362831;">o</span><span style=" color: #5D3B28;">m</span><span style=" color: #2F3F67;">p</span>l<span style=" color: #160C0F;">i</span><span style=" color: #362831;">a</span><span style=" color: #262B4F;">n</span>c<span style=" color: #362831;">e</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s29" style="text-indent: 0pt;text-align: left;">() <span style=" color: #362831;">Op</span><span style=" color: #5D3B28;">t</span><span style=" color: #0C0838;">i</span><span style=" color: #46414F;">ons</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s32" style="text-indent: 0pt;line-height: 22pt;text-align: left;">II</p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;">H<span style=" color: #46414F;">U</span>D <span style=" color: #46414F;">H</span><span style=" color: #80421F;">E</span>CM</p><p class="s36" style="padding-top: 1pt;text-indent: 0pt;line-height: 126%;text-align: left;">C<span style=" color: #262B4F;">a</span><span style=" color: #87591F;">l</span>c<span style=" color: #5D3B28;">a</span>l<span style=" color: #18427C;">a</span><span style=" color: #46414F;">t</span><span style=" color: #2F3F67;">or </span><span class="s43">H</span><span class="s44">UD</span><span class="s45">.</span><span class="s46">g</span><span class="s44">ov </span><span class="s47">2.2</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s34" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #3B628E;">M</span><span style=" color: #775D52;">i</span>c<span style=" color: #5E5964;">ro</span>so<span style=" color: #5D3B28;">ft</span></p><p class="s41" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">W<span style=" color: #5E5964;">hi</span>te<span style=" color: #775D52;">b</span><span style=" color: #2F3F67;">o</span>a<span style=" color: #465677;">r</span><span style=" color: #362831;">d</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s50" style="text-indent: 0pt;line-height: 5pt;text-align: left;">F<span style=" color: #5E5964;">IX </span><span style=" color: #42181A;">- </span><span style=" color: #46414F;">0</span>3<span style=" color: #2F3F67;">6</span><span style=" color: #5E5964;">5</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #46414F;">Zoo</span>m<span style=" color: #775D52;">.</span><span style=" color: #46414F;">Go</span>v Cli<span style=" color: #262B4F;">e</span>n<span style=" color: #262B4F;">t</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s41" style="text-indent: 0pt;line-height: 6pt;text-align: left;"><span style=" color: #80421F;">L</span>ic<span style=" color: #362831;">e</span><span style=" color: #5E5964;">n</span><span style=" color: #465677;">s</span><span style=" color: #2F0849;">i</span><span style=" color: #3B628E;">n</span>g <span style=" color: #465677;">a</span><span style=" color: #745236;">n</span><span style=" color: #5E5964;">d Lo</span><span style=" color: #546780;">.</span>.<span style=" color: #745236;">. </span>x64</p><p style="text-indent: 0pt;text-align: left;"/><p class="s62" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #3B628E;">M</span>a<span style=" color: #46414F;">na</span>ge <span style=" color: #5E5964;">V</span><span style=" color: #4690CF;">i</span>rt<span style=" color: #5D3B28;">u</span>a<span style=" color: #162679;">l</span></p><p class="s41" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">Sm<span style=" color: #5D3B28;">a</span>rt <span style=" color: #5D3B28;">C</span><span style=" color: #362831;">ar</span><span style=" color: #4F729C;">d</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #5D3B28;">E</span>n<span style=" color: #46414F;">t</span>r<span style=" color: #46414F;">us</span><span style=" color: #571A03;">t </span><span style=" color: #46414F;">P</span><span style=" color: #5E1626;">I</span>V<span style=" color: #160C0F;">-</span>D   M<span style=" color: #2F0849;">i</span><span style=" color: #46414F;">cros</span>o<span style=" color: #46414F;">ft </span>l<span style=" color: #546780;">n</span><span style=" color: #46414F;">tune</span></p><p class="s36" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">V<span style=" color: #87591F;">i</span>rtu<span style=" color: #46414F;">a</span><span style=" color: #2F0849;">l </span><span style=" color: #46414F;">S</span><span style=" color: #262B4F;">m</span>a<span style=" color: #3B628E;">r</span><span style=" color: #2F3F67;">t </span>C<span style=" color: #46414F;">a</span>r..<span style=" color: #46414F;">. </span>Co<span style=" color: #775D52;">m</span><span style=" color: #262B4F;">p</span><span style=" color: #46414F;">a</span>ny <span style=" color: #46414F;">P</span><span style=" color: #465677;">o</span><span style=" color: #571A03;">rt</span><span style=" color: #262B4F;">a</span><span style=" color: #D18928;">l</span></p><p style="text-indent: 0pt;text-align: left;"/><h1 style="text-indent: 0pt;line-height: 64pt;text-align: left;">!I</h1><p style="text-indent: 0pt;text-align: left;"/><p class="s73" style="text-indent: 0pt;line-height: 5pt;text-align: left;">M<span style=" color: #7C7C7C;">i</span>cro<span style=" color: #46414F;">s</span>o<span style=" color: #5D3B28;">ft </span>Corpo<span style=" color: #4F729C;">r</span><span style=" color: #46414F;">a</span>t<span style=" color: #B67C2A;">i</span>on <span style=" color: #46414F;">C</span>F<span style=" color: #546780;">P</span><span style=" color: #46414F;">B</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s73" style="text-indent: 0pt;line-height: 5pt;text-align: left;">M<span style=" color: #80421F;">i</span>croso<span style=" color: #775D52;">ft </span>C<span style=" color: #46414F;">or</span>po<span style=" color: #46414F;">ra</span>t<span style=" color: #546780;">i</span>o<span style=" color: #4F729C;">n</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s82" style="text-indent: 0pt;line-height: 6pt;text-align: left;">C<span style=" color: #5E5964;">i</span>sco <span style=" color: #5E5964;">W</span>e<span style=" color: #262B4F;">b</span><span style=" color: #362831;">e</span>x</p><p style="text-indent: 0pt;text-align: left;"/><p class="s82" style="text-indent: 0pt;line-height: 6pt;text-align: left;">DCC A<span style=" color: #5E5964;">PR</span><span class="s41">&amp; </span>A<span style=" color: #5E5964;">PY  </span>A<span style=" color: #362831;">u</span><span style=" color: #2F3F67;">d</span>ac<span style=" color: #872803;">i</span>t<span style=" color: #546780;">y </span><span style=" color: #0C0838;">- </span><span style=" color: #5E5964;">W</span>a<span style=" color: #5E5964;">v</span>e</p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;">N<span style=" color: #362831;">e</span><span style=" color: #46414F;">two</span>r<span style=" color: #745236;">k </span><span style=" color: #362831;">R</span><span style=" color: #262B4F;">e</span><span style=" color: #46414F;">co</span><span style=" color: #18427C;">r</span>d<span style=" color: #2F0849;">i..</span>. <span style=" color: #46414F;">Ca</span>l<span style=" color: #46414F;">c</span><span style=" color: #2F3F67;">u</span><span style=" color: #872803;">l</span><span style=" color: #46414F;">a</span><span style=" color: #262B4F;">t</span>or<span style=" color: #46414F;">s   </span><span style=" color: #5D3B28;">E</span><span style=" color: #46414F;">d</span>i<span style=" color: #571A03;">t</span>or</p><p class="s73" style="padding-left: 47pt;text-indent: 0pt;text-align: left;"><span style=" color: #46414F;">C</span>o<span style=" color: #546780;">m</span>pt<span style=" color: #465677;">ro</span><span style=" color: #5D8EC6;">ll</span><span style=" color: #2F3F67;">er </span><span style=" color: #46414F;">o</span>f <span style=" color: #262B4F;">t</span>h<span style=" color: #46414F;">e </span><span class="s97">C.</span><span class="s98">.. </span><span style=" color: #46414F;">O</span>pe<span style=" color: #546780;">n </span>So<span style=" color: #46414F;">u</span><span style=" color: #AA5B21;">r</span><span style=" color: #46414F;">ce</span></p><p class="s73" style="text-indent: 0pt;text-align: left;">40.2<span style=" color: #2F0849;">.</span>4.6              2<span style=" color: #362831;">.</span>0.5</p><p style="text-indent: 0pt;text-align: left;"/><p class="s16" style="padding-left: 25pt;text-indent: 0pt;text-align: left;"><span class="s102">I</span><span class="s103">►</span>I<span style=" color: #5D3B28;">n</span>st<span style=" color: #362831;">a</span><span style=" color: #1D597E;">l</span>la<span style=" color: #745236;">t</span>ion st<span style=" color: #362831;">a</span><span style=" color: #465677;">t</span><span style=" color: #262B4F;">u</span>s</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 33pt;text-indent: 0pt;line-height: 1pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s83" style="padding-top: 1pt;padding-bottom: 1pt;padding-left: 18pt;text-indent: 0pt;text-align: left;"><span style=" color: #674411;">F</span>il<span style=" color: #262B4F;">t</span><span style=" color: #362831;">e</span><span style=" color: #2F3F67;">r: </span>All</p><p style="padding-left: 33pt;text-indent: 0pt;line-height: 1pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s34" style="padding-left: 11pt;text-indent: 0pt;text-align: left;">S<span style=" color: #5E5964;">o</span>rt b<span style=" color: #5E5964;">y: </span><span class="s108">I</span><span class="s109">M</span><u>o</u><span class="s111">s</span><span class="s112">t </span><span class="s111">r</span><u>ec</u><span class="s112">e</span><span class="s113">n</span>t  <span class="s114">·</span><span class="s115">I</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s46" style="padding-left: 25pt;text-indent: 0pt;text-align: left;">S<span style=" color: #5E5964;">ea</span>rc<span style=" color: #546780;">h             </span><span class="s117">P</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;line-height: 17pt;text-align: left;"><span class="h3" style=" background-color: #26AC44;">cfpb</span></p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 67pt;text-indent: 0pt;line-height: 6pt;text-align: left;"><span class="s8" style=" background-color: #26AC44;">Consumer Financia</span><span class="s9">l</span></p><p style="text-indent: 0pt;line-height: 22pt;text-align: left;"><span class="s118" style=" background-color: #46B860;"> =</span></p><p style="text-indent: 0pt;text-align: left;"/><p style="padding-left: 67pt;text-indent: 0pt;line-height: 6pt;text-align: left;"><span class="s119" style=" background-color: #26AC44;">Protection Bureau</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 34pt;text-indent: 0pt;line-height: 6pt;text-align: left;"><span class="s120" style=" background-color: #26AC44;">App</span><span class="s121" style=" background-color: #26AC44;">l</span><span class="s120" style=" background-color: #26AC44;">icat</span><span class="s122" style=" background-color: #26AC44;">i</span><span class="s120" style=" background-color: #26AC44;">ons</span></p><p class="s124" style="padding-left: 105pt;text-indent: 0pt;line-height: 6pt;text-align: left;"><span class="s123">All  </span>R<span style=" color: #262B4F;">e</span>qu<span style=" color: #5E5964;">i</span><span style=" color: #18427C;">r</span><span style=" color: #46414F;">ed</span></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s112" style="padding-top: 3pt;padding-left: 106pt;text-indent: 0pt;text-align: left;"><span class="s126">F</span><span class="s83">il</span><span class="s84">t</span><span class="s85">e</span><span class="s86">r: </span><span class="s82">A</span><span class="s83">ll               </span><span class="s62">S</span><span class="s34">ort b</span><span class="s33">y: </span><span class="s108">I</span><span style=" color: #465677;">M</span><span style=" color: #46414F;">o</span>st <span style=" color: #262B4F;">r</span>e<span style=" color: #46414F;">c</span>e<span style=" color: #5E5964;">n</span><span class="s33">t   </span><span class="s114">·</span><span class="s115">I</span></p><p style="padding-top: 4pt;text-indent: 0pt;text-align: right;"><span class="s7" style=" background-color: #030303;">■</span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s127" style="padding-left: 43pt;text-indent: 0pt;text-align: left;">I &nbsp;&nbsp;&nbsp; <span class="s128">Searc</span><span class="s129">h </span></p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 34pt;text-indent: 0pt;line-height: 3pt;text-align: left;"><span/></p><p class="s16" style="padding-top: 1pt;padding-left: 25pt;text-indent: 0pt;text-align: left;"><span class="s18">[o </span>O<span style=" color: #42181A;">pe</span><span style=" color: #702F0E;">r</span><span style=" color: #362831;">a</span>t<span style=" color: #054990;">i</span><span style=" color: #362831;">n</span>g Sy<span style=" color: #362831;">s</span>t<span style=" color: #362831;">e</span>ms</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="text-indent: 0pt;text-align: left;"><span/></p><p class="s132" style="text-indent: 0pt;line-height: 9pt;text-align: left;"><span class="s131">&#39;=a </span>De<span style=" color: #362831;">v</span><span style=" color: #49030C;">i</span>ce co<span style=" color: #5D3B28;">m</span><span style=" color: #2F3F67;">p</span>l<span style=" color: #160C0F;">i</span><span style=" color: #362831;">a</span><span style=" color: #262B4F;">n</span>ce</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p class="s16" style="text-indent: 0pt;text-align: left;"><span style=" color: #160C0F;">() </span>O<span style=" color: #42181A;">p</span><span style=" color: #5D3B28;">t</span><span style=" color: #0C0838;">i</span>ons</p><p style="text-indent: 0pt;text-align: left;"/><p class="s32" style="text-indent: 0pt;line-height: 22pt;text-align: left;">II</p><p style="text-indent: 0pt;text-align: left;"/><p class="s36" style="text-indent: 0pt;line-height: 6pt;text-align: left;">H<span style=" color: #46414F;">UD H</span><span style=" color: #80421F;">E</span>CM</p><p class="s139" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">C<span style=" color: #262B4F;">a</span><span style=" color: #745236;">lc</span>a<span style=" color: #5E5964;">l</span><span style=" color: #262B4F;">a</span>to<span style=" color: #054990;">r</span></p><p class="s44" style="padding-top: 1pt;text-indent: 0pt;text-align: left;"><span style=" color: #5D3B28;">H</span>UD<span style=" color: #8A7556;">.</span><span style=" color: #46414F;">g</span>ov</p><p class="s144" style="padding-top: 1pt;text-indent: 0pt;text-align: left;">2<span style=" color: #5E5964;">.</span><span style=" color: #262B4F;">2</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #3B628E;">M</span><span style=" color: #775D52;">i</span>cro<span style=" color: #46414F;">s</span>o<span style=" color: #745236;">ft</span></p><p class="s62" style="padding-top: 2pt;text-indent: 0pt;text-align: left;"><span style=" color: #5E5964;">Whi</span>te<span style=" color: #775D52;">b</span><span style=" color: #262B4F;">o</span>a<span style=" color: #465677;">r</span>d</p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #5D3B28;">F</span>IX <span style=" color: #42181A;">- </span>0<span style=" color: #46414F;">365</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s34" style="text-indent: 0pt;line-height: 5pt;text-align: left;">Zoo<span style=" color: #5E5964;">m</span><span style=" color: #775D52;">.</span>Go<span style=" color: #5E5964;">v Cl</span><span style=" color: #465677;">i</span>en<span style=" color: #262B4F;">t</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s34" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #3B628E;">M</span>anage <span style=" color: #5E5964;">V</span><span style=" color: #4690CF;">i</span>rt<span style=" color: #745236;">u</span>a<span style=" color: #162679;">l</span></p><p class="s34" style="padding-top: 2pt;text-indent: 0pt;text-align: left;">S<span style=" color: #262B4F;">m</span><span style=" color: #362831;">a</span>rt <span style=" color: #5D3B28;">C</span><span style=" color: #362831;">ar</span><span style=" color: #4F729C;">d</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #5D3B28;">E</span>n<span style=" color: #46414F;">t</span>r<span style=" color: #465677;">u</span><span style=" color: #46414F;">s</span><span style=" color: #571A03;">t </span>P<span style=" color: #5E1626;">I</span>V<span style=" color: #160C0F;">-</span>D</p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;">M<span style=" color: #2F0849;">i</span><span style=" color: #46414F;">c</span>ro<span style=" color: #46414F;">s</span>o<span style=" color: #46414F;">ft </span>lnt<span style=" color: #46414F;">une</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s34" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #80421F;">Li</span>c<span style=" color: #362831;">e</span><span style=" color: #5E5964;">n</span>s<span style=" color: #2F0849;">i</span><span style=" color: #2F3F67;">n</span>g a<span style=" color: #5D3B28;">n</span>d <span style=" color: #5E5964;">L</span>o<span style=" color: #5E5964;">.</span><span style=" color: #162679;">.</span><span style=" color: #AC5900;">. </span>x64</p><p style="text-indent: 0pt;text-align: left;"/><p class="s73" style="text-indent: 0pt;line-height: 5pt;text-align: left;">M<span style=" color: #7C7C7C;">i</span>cr<span style=" color: #46414F;">o</span><span style=" color: #362831;">s</span><span style=" color: #46414F;">o</span><span style=" color: #5D3B28;">ft C</span><span style=" color: #46414F;">o</span>rpo<span style=" color: #546780;">r</span><span style=" color: #46414F;">.a</span>t<span style=" color: #B67C2A;">i</span>o<span style=" color: #8A7556;">n </span><span style=" color: #46414F;">C</span>F<span style=" color: #546780;">P</span><span style=" color: #46414F;">B</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s34" style="text-indent: 0pt;line-height: 5pt;text-align: left;"><span style=" color: #5E5964;">V</span><span style=" color: #87591F;">i</span>rt<span style=" color: #546780;">u</span><span style=" color: #362831;">a</span><span style=" color: #2F0849;">l </span>S<span style=" color: #262B4F;">m</span>art <span style=" color: #262B4F;">C</span>ar.<span style=" color: #5E5964;">.</span><span style=" color: #054990;">. </span>Co<span style=" color: #5E5964;">m</span><span style=" color: #262B4F;">p</span>a<span style=" color: #5E5964;">ny </span>Po<span style=" color: #571A03;">rt</span><span style=" color: #262B4F;">a</span><span style=" color: #D18928;">l</span></p><p class="s73" style="padding-left: 47pt;text-indent: 0pt;text-align: left;">M<span style=" color: #80421F;">i</span><span style=" color: #46414F;">c</span>r<span style=" color: #46414F;">os</span>o<span style=" color: #775D52;">ft </span><span style=" color: #46414F;">Co</span><span style=" color: #54214D;">r</span><span style=" color: #46414F;">po</span>r<span style=" color: #5D3B28;">.a</span>t<span style=" color: #465677;">io</span><span style=" color: #4F729C;">n</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s34" style="text-indent: 0pt;line-height: 5pt;text-align: left;">C<span style=" color: #5E5964;">i</span><span style=" color: #262B4F;">s</span>co <span style=" color: #5E5964;">W</span><span style=" color: #362831;">e</span><span style=" color: #262B4F;">b</span><span style=" color: #362831;">e</span>x</p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 6pt;text-align: left;"><span style=" color: #46414F;">OCC APR </span><span class="s36">&amp; </span>A<span style=" color: #46414F;">P</span>Y  A<span style=" color: #46414F;">u</span><span style=" color: #2F3F67;">d</span><span style=" color: #362831;">a</span><span style=" color: #5D3B28;">ci</span>ty <span style=" color: #0C0838;">- </span>W<span style=" color: #362831;">a</span>v<span style=" color: #362831;">e</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s33" style="text-indent: 0pt;line-height: 5pt;text-align: left;">N<span style=" color: #46414F;">e</span><span style=" color: #571A03;">t</span>w<span style=" color: #46414F;">o</span>r<span style=" color: #775D52;">k </span><span style=" color: #362831;">R</span><span style=" color: #46414F;">e</span>c<span style=" color: #46414F;">o</span><span style=" color: #18427C;">rdi.</span><span style=" color: #775D52;">.</span>. <span style=" color: #46414F;">Ca</span>lc<span style=" color: #2F3F67;">u</span><span style=" color: #872803;">l</span><span style=" color: #46414F;">a</span><span style=" color: #262B4F;">t</span>ors   <span style=" color: #5D3B28;">E</span>di<span style=" color: #571A03;">t</span>or</p><p class="s75" style="padding-left: 47pt;text-indent: 0pt;text-align: left;"><span style=" color: #5E5964;">Co</span><span style=" color: #546780;">m</span><span style=" color: #5E5964;">ptro</span><span style=" color: #5D8EC6;">ll</span><span style=" color: #262B4F;">er </span>of <span style=" color: #262B4F;">t</span><span style=" color: #5E5964;">h</span>e <span class="s155">C.</span><span class="s98">.. </span>O<span style=" color: #5E5964;">pe</span>n <span style=" color: #5E5964;">So</span>u<span style=" color: #AA5B21;">r</span>ce</p><p class="s73" style="text-indent: 0pt;text-align: left;">40<span style=" color: #3B628E;">.</span>2<span style=" color: #46414F;">.4</span>.6              2<span style=" color: #46414F;">.</span>0.<span style=" color: #46414F;">5</span></p><p style="text-indent: 0pt;text-align: left;"/><p class="s16" style="padding-left: 25pt;text-indent: 0pt;text-align: left;"><span class="s157">I</span><span class="s158">►</span>I<span style=" color: #5D3B28;">n</span>st<span style=" color: #5D3B28;">a</span><span style=" color: #1D597E;">l</span>l<span style=" color: #362831;">a</span><span style=" color: #745236;">t</span>i<span style=" color: #362831;">o</span>n st<span style=" color: #362831;">a</span><span style=" color: #465677;">t</span><span style=" color: #262B4F;">u</span>s</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="text-indent: 0pt;text-align: left;"><br/></p><h2 style="padding-top: 1pt;padding-left: 21pt;text-indent: 0pt;text-align: left;">Mi-Fi Connection Guide</h2><ol id="l9"><li data-list-text="1."><p style="padding-top: 15pt;padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Power on the mi-fi by holding down the power button located on the top of the device. Hold the power button down until graphics are seen on the screen then release.</p></li><li data-list-text="2."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Once the device is powered on, you will need to connect your laptop to it. (Windows 11 go to Step 3 after doing this. Windows 10, do step 2a before continuing to step 3).</p><p style="text-indent: 0pt;text-align: left;"><span/></p><p style="padding-left: 75pt;text-indent: 0pt;line-height: 112%;text-align: left;">2a. For Windows 10 machines, locate the chevron icon ^. It will be on the bottom right hand side. Click it to open up a sub menu with icons in it.</p><p style="text-indent: 0pt;text-align: left;"><br/></p></li><li data-list-text="3."><p style="padding-left: 75pt;text-indent: -18pt;text-align: left;">Click the globe icon to bring up your wi-fi connections menu.     . This will bring up a list of available wireless connections.</p></li><li data-list-text="4."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Locate the name of the mi-fi that you will be connecting to in this menu 4a. For the AT&amp;T MI-FI, it will be called RG2102_5C9A</p><p style="padding-left: 75pt;text-indent: 0pt;text-align: left;">4b. For the Verizon MI-FI, it will be called Verizon-MiFi8800L-0404</p></li><li data-list-text="5."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Click on the Mi-Fi name. It will bring up a menu prompting you to enter a password. 5a. UNCHECK the box that says “Connect by Default”.</p></li><li data-list-text="6."><p style="padding-left: 75pt;text-indent: -18pt;line-height: 107%;text-align: left;">Enter the password for the mi-fi you are using 6a. For the AT&amp;T mi-fi, the password is: 4120f9c3</p><p style="padding-left: 75pt;text-indent: 0pt;text-align: left;">6b. For the Verizon mi-fi, the password is: 167974e1</p></li><li data-list-text="7."><p style="padding-top: 1pt;padding-left: 75pt;text-indent: -18pt;text-align: left;">Press Connect. Allow the mi-fi to fully connect</p></li><li data-list-text="8."><p style="padding-left: 75pt;text-indent: -18pt;text-align: left;">Once connected, your VPN will automatically connect to the internet</p></li></ol><p style="text-indent: 0pt;text-align: left;"><br/></p><h2 style="padding-left: 21pt;text-indent: 0pt;text-align: left;">Printing Guide</h2><p style="padding-top: 15pt;padding-left: 39pt;text-indent: 0pt;text-align: left;">1. When printing, use the drop-down menu to select the printer you are using.</p><p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 56pt;text-indent: 0pt;line-height: 107%;text-align: left;">1a. For the HP M234 Printer (Black &amp; White), select the option in the drop down that says “HP Laserjet M234sdw”.</p><p style="padding-left: 56pt;text-indent: 0pt;line-height: 107%;text-align: left;">1b. For the HP M479fdw Printer (Color w/Scanner), select the option in the drop down that says “HP Color Laserjet Pro M478f-9f UPD PCL 6”</p></body></html>

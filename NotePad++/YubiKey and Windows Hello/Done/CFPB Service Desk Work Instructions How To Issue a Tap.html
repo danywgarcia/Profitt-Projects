@@ -1,0 +1,429 @@
+  <style type="text/css">* {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+  }
+
+  div.page {
+    width: 880px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+  }
+
+  h1 {
+    color: #404040;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24pt;
+  }
+
+  .p,
+    p {
+        color: #292929;
+        font-family: Georgia, serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 12pt;
+        margin: 3px;
+        padding-left: 15px;
+        padding-right: 80px;
+    }
+
+  h3 {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 14pt;
+  }
+
+  .s1 {
+    color: #404040;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  .s3 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11.5pt;
+  }
+
+  .s4 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .a {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 10.5pt;
+  }
+
+  .s5 {
+    color: #1F8476;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s7 {
+    color: #2D2D2D;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  h2 {
+    color: #404040;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18pt;
+  }
+
+  .s8 {
+    color: #292929;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  .s9 {
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+  .s10 {
+    color: black;
+    font-family: "Courier New", monospace;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 11pt;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l1 {
+    padding-left: 0pt;
+    counter-reset: c1 1;
+  }
+
+  #l1>li>*:first-child:before {
+    counter-increment: c1;
+    content: counter(c1, decimal)". ";
+    color: black;
+    list-style-position: inside;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-weight: none;
+    font-size: 11.5pt;
+  }
+
+  #l1>li:first-child>*:first-child:before {
+    counter-increment: c1 0;
+  }
+
+  #l2 {
+    padding-left: 15pt;
+  }
+
+  #l2>li>*:first-child:before {
+    content: " ";
+    color: #2D2D2D;
+    font-family: Symbol, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l3 {
+    padding-left: 0pt;
+    counter-reset: d1 1;
+  }
+
+  #l3>li>*:first-child:before {
+    counter-increment: d1;
+    content: counter(d1, lower-latin)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l3>li:first-child>*:first-child:before {
+    counter-increment: d1 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l4 {
+    padding-left: 0pt;
+    counter-reset: e1 1;
+  }
+
+  #l4>li>*:first-child:before {
+    counter-increment: e1;
+    content: counter(e1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l4>li:first-child>*:first-child:before {
+    counter-increment: e1 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l5 {
+    padding-left: 0pt;
+    counter-reset: f1 1;
+  }
+
+  #l5>li>*:first-child:before {
+    counter-increment: f1;
+    content: counter(f1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l5>li:first-child>*:first-child:before {
+    counter-increment: f1 0;
+  }
+
+  #l6 {
+    padding-left: 0pt;
+    counter-reset: f2 1;
+  }
+
+  #l6>li>*:first-child:before {
+    counter-increment: f2;
+    content: counter(f2, lower-latin)". ";
+    color: #2D2D2D;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l6>li:first-child>*:first-child:before {
+    counter-increment: f2 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l7 {
+    padding-left: 0pt;
+    counter-reset: g1 1;
+  }
+
+  #l7>li>*:first-child:before {
+    counter-increment: g1;
+    content: counter(g1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l7>li:first-child>*:first-child:before {
+    counter-increment: g1 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l8 {
+    padding-left: 0pt;
+    counter-reset: h1 1;
+  }
+
+  #l8>li>*:first-child:before {
+    counter-increment: h1;
+    content: counter(h1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l8>li:first-child>*:first-child:before {
+    counter-increment: h1 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l9 {
+    padding-left: 0pt;
+    counter-reset: i1 1;
+  }
+
+  #l9>li>*:first-child:before {
+    counter-increment: i1;
+    content: counter(i1, decimal)". ";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l9>li:first-child>*:first-child:before {
+    counter-increment: i1 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l10 {
+    padding-left: 0pt;
+    counter-reset: j1 1;
+  }
+
+  #l10>li>*:first-child:before {
+    counter-increment: j1;
+    content: counter(j1, decimal)". ";
+    color: #292929;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l10>li:first-child>*:first-child:before {
+    counter-increment: j1 0;
+  }
+
+  li {
+    display: block;
+  }
+
+  #l11 {
+    padding-left: 0pt;
+    counter-reset: k1 1;
+  }
+
+  #l11>li>*:first-child:before {
+    counter-increment: k1;
+    content: counter(k1, decimal)". ";
+    color: black;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+
+  #l11>li:first-child>*:first-child:before {
+    counter-increment: k1 0;
+  }
+
+  #l12 {
+    padding-left: 0pt;
+  }
+
+  #l12>li>*:first-child:before {
+    content: " ";
+    color: black;
+    font-family: Symbol, serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 10.5pt;
+  }
+</style>
+<div>
+<div class="page">
+<h1 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">CFPB Service Desk Work Instructions:</h1>
+<h2 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">How to Issue a Temporary Access Pass (TAP)</h2>
+<h3 style="padding-top: 10pt; text-indent: 5pt; text-align: left; font-weight: bold;">Create a TAP</h3>
+<ol id="l1">
+<li>
+<p style="padding-top: 5pt; padding-left: 11pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"> &nbsp;&nbsp;<em>Sign in to</em>  the <span style="color: #0562c1; font-family: Georgia, serif; sans-serif; font-style: normal; font-weight: normal; text-decoration: underline; font-size: 12pt;">Azure portal</span><span style="color: #151515;"> by using your <strong>Azure AD ADM</strong> account.</span></p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 11pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Select</em> <strong>Azure Active Directory</strong> > <em>browse</em> to <strong>Users</strong> > <em>select</em> the <strong>user's profile</strong> > <em>choose</em> <br /><span style="padding-top: 5pt; padding-left: 45pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> <strong>Authentication methods</strong>.</span></p>
+<p style="padding-top: 5pt; padding-left: 25pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<strong>Note:</strong> If needed, <em>select</em> the option <strong>Try the new user authentication methods experience</strong>.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 11pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Select</em> <strong>Add authentication methods</strong>.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 11pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;Below <strong>Choose method</strong>, <em>select</em> <strong>Temporary Access Pass</strong>.</p>
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 11pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Accept</em></em> the default time or duration by <em>selecting</em> <strong>Add</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=66ce1b441b19f1108262eb1de54bcbef" width="531" height="356" /><p>
+<p style="padding-top: 5pt; padding-left: 25pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<strong>Note:</strong> Once added, the details of the <strong>TAP</strong> are shown.</p> 
+</li>
+<li>
+<p style="padding-top: 5pt; padding-left: 11pt; text-indent: 25pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<em>Document</em> the <strong>TAP</strong> value and provide this password to the user</span> direct chat<br /><span style="padding-top: 5pt; padding-left: 45pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> via Teams.</span></p>
+<p style="padding-top: 5pt; padding-left: 25pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">&nbsp;&nbsp;<strong>Note:</strong> The <strong>TAP</strong> will only  show itself once, you can't view this value after you select <strong>OK</strong>.</p>
+<p style="padding-top: 5pt; padding-bottom: 20pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=8a4f5f841b19f1108262eb1de54bcb30" width="544" height="363" /></p>
+</li>
+</ol>
+</div>
+</div>

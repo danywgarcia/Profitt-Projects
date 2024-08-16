@@ -1,0 +1,458 @@
+<style type="text/css">
+* {
+margin: 0;
+padding: 0;
+text-indent: 0;
+}
+
+div.page {
+width: 880px;
+border: 1px solid white;
+padding-top: 5px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+background-size: 25px 25px;
+background-image:
+linear-gradient(to right, solid white, transparent 1px),
+linear-gradient(to bottom, solid white, transparent 1px);;
+}
+
+toc .toc_container {
+background: none;
+border: 1px solid white;
+display: table;
+font-size: 100%;
+margin-bottom: 1em;
+padding: 5px;
+width: 470pt;
+}
+
+.toc_title {
+font-weight: 700;
+text-align: center;
+}
+
+h1 {
+color: #404040;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 24pt;
+}
+
+h2 {
+color: #404040;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 18pt;
+}
+
+h3 {
+color: #292929;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 14pt;
+}
+
+.p,
+p {
+color: #292929;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 12pt;
+margin: 3px;
+padding-left: 15px;
+padding-right: 80px;
+}
+
+.s1 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+.s2 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s3 {
+color: #2D2D2D;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+.s4 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s5 {
+color: #1F8476;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s7 {
+color: #2D2D2D;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s8 {
+color: #292929;
+font-family: "Times New Roman", serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+.s9 {
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 12pt;
+}
+
+.s10 {
+color: black;
+font-family: "Courier New", monospace;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11pt;
+}
+
+.a {
+color: #1F8476;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: underline;
+font-size: 10.5pt;
+}
+
+li {
+display: block;
+}
+
+#l1 {
+padding-left: 0pt;
+counter-reset: c1 1;
+}
+
+#l1>li>*:first-child:before {
+counter-increment: c1;
+content: counter(c1, decimal)". ";
+color: black;
+list-style-position: inside;
+font-family: Georgia, serif;
+font-style: normal;
+font-size: 11.5pt;
+}
+
+#l1>li:first-child>*:first-child:before {
+counter-increment: c1 0;
+}
+
+#l2 {
+padding-left: 15pt;
+}
+
+#l2>li>*:first-child:before {
+content: " ";
+color: #2D2D2D;
+font-family: Symbol, serif;
+font-style: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l3 {
+padding-left: 0pt;
+counter-reset: d1 1;
+}
+
+#l3>li>*:first-child:before {
+counter-increment: d1;
+content: counter(d1, upper-latin)". ";
+color: #292929;
+font-family: Georgia, sans-serif;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+#l3>li:first-child>*:first-child:before {
+counter-increment: d1 0;
+}
+
+#l4 {
+padding-left: 0pt;
+counter-reset: e1 1;
+}
+
+#l4>li>*:first-child:before {
+counter-increment: e1;
+content: counter(e1, decimal)". ";
+color: black;
+list-style-position: inside;
+font-family: Georgia, serif;
+font-style: normal;
+font-size: 11.5pt;
+}
+
+#l4>li:first-child>*:first-child:before {
+counter-increment: e1 0;
+}
+
+#l5 {
+padding-left: 0pt;
+counter-reset: f1 1;
+}
+
+#l5>li>*:first-child:before {
+counter-increment: f1;
+content: counter(f1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l5>li:first-child>*:first-child:before {
+counter-increment: f1 0;
+}
+
+#l6 {
+padding-left: 0pt;
+counter-reset: f2 1;
+}
+
+#l6>li>*:first-child:before {
+counter-increment: f2;
+content: counter(f2, lower-latin)". ";
+color: #2D2D2D;
+font-family: Georgia, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 11.5pt;
+}
+
+#l6>li:first-child>*:first-child:before {
+counter-increment: f2 0;
+}
+
+#l7 {
+padding-left: 0pt;
+counter-reset: g1 1;
+}
+
+#l7>li>*:first-child:before {
+counter-increment: g1;
+content: counter(g1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l7>li:first-child>*:first-child:before {
+counter-increment: g1 0;
+}
+
+#l8 {
+padding-left: 0pt;
+counter-reset: h1 1;
+}
+
+#l8>li>*:first-child:before {
+counter-increment: h1;
+content: counter(h1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l8>li:first-child>*:first-child:before {
+counter-increment: h1 0;
+}
+
+#l9 {
+padding-left: 0pt;
+counter-reset: i1 1;
+}
+
+#l9>li>*:first-child:before {
+counter-increment: i1;
+content: counter(i1, decimal)". ";
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l9>li:first-child>*:first-child:before {
+counter-increment: i1 0;
+}
+
+#l10 {
+padding-left: 0pt;
+counter-reset: j1 1;
+}
+
+#l10>li>*:first-child:before {
+counter-increment: j1;
+content: counter(j1, decimal)". ";
+color: #292929;
+font-family: Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l10>li:first-child>*:first-child:before {
+counter-increment: j1 0;
+}
+
+#l11 {
+padding-left: 0pt;
+counter-reset: k1 1;
+}
+
+#l11>li>*:first-child:before {
+counter-increment: k1;
+content: counter(k1, decimal)". ";
+color: black;
+font-family: Georgia, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+
+#l11>li:first-child>*:first-child:before {
+counter-increment: k1 0;
+}
+
+#l12 {
+padding-left: 0pt;
+}
+
+#l12>li>*:first-child:before {
+content: " ";
+color: black;
+font-family: Symbol, serif;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+font-size: 10.5pt;
+}
+</style>
+<div class="page">
+<h1 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">CFPB End User Guide:</h1>
+<h2 style="padding-top: 10pt; text-indent: 0pt; text-align: center; font-weight: bold; color: #1fa040;">How to Change your YubiKey PIN</h2>
+<h3 style="padding-top: 10pt; text-indent: 0pt; text-align: left; font-weight: bold; color: #243f60;">Overview</h3>
+<p style="padding-top: 10pt; padding-left: 0pt; text-indent: 0pt; line-height: 100%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">Your YubiKey is registered on behalf of end user by the Service Desk using a default PIN. This document is for when an end user will need to change their PIN for security.</p>
+<h3 style="padding-top: 10pt; text-indent: 15pt; text-align: left; font-weight: bold; color: #243f60;">For Windows Users</h3>
+<ol id="l1">
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 26pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Click</em> the <strong>Start menu</strong> icon and search for '<strong>Settings</strong>', then <em>click</em> on the '<strong>Settings</strong>' icon.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=985334d71b19f910dbc743f1f54bcb6b" width="297" height="209" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Click</em> '<strong>Accounts</strong>', then '<strong>Sign-in options</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=39a3bcd71b19f910dbc743f1f54bcb53" width="380" height="211" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Click</em> '<strong>Security Key</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=48d578db1b19f910dbc743f1f54bcb8d" width="389" height="225" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;">Once expanded, <em>click</em> '<strong>Manage</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=f206b01f1b19f910dbc743f1f54bcb7e" width="434" height="136" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 25pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Touch</em> the <strong>metal tab</strong> (a gold strip on the side or gold circle) on your YubiKey to verify user presence <br /><span style="padding-top: 5pt; padding-left: 38pt; text-indent: 20pt; line-height: 135%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"> when prompted.</span></p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=f456741f1b19f910dbc743f1f54bcbc1" width="192" height="214" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">Under <strong>Security Key PIN</strong>, <em>select</em> '<strong>Change</strong>' to change the PIN number for your YubiKey.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=35a6705f1b19f910dbc743f1f54bcb80" width="198" height="216" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Enter</em> your current <strong>PIN</strong>, then a new <strong>PIN</strong> twice.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=b45778d31b59f910dbc743f1f54bcb64" width="221" height="220" /></p>
+<p style="padding-top: 10pt; padding-left: 47pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong> It is possible to use the same PIN code as your current PIV PIN.</p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 20pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">After all fields have been completed, <em>click</em><strong> OK</strong>.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=e5c778571b59f910dbc743f1f54bcb4e" width="269" height="265" /></p>
+</li>
+</ol>
+<h3 style="padding-top: 10pt; text-indent: 15pt; text-align: left; font-weight: bold; color: #243f60;">For macOS Users</h3>
+<p style="padding-top: 10pt; padding-left: 5pt; text-indent: 10pt; line-height: 100%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;">The pin is changed using the <strong>YubiKey Manager</strong>. If the application is not present, install from Self Service.</p>
+<ol id="l4">
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Open</em> '<strong>Yubikey Manager</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=fd28f4971b59f910dbc743f1f54bcb7f" width="336" height="272" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: justify; margin-left: auto; margin-right: auto;"><em>Select</em> '<strong>FIDO2</strong>' from the Applications menu.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=87d9bc9b1b59f910dbc743f1f54bcba4" width="360" height="231" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Click</em> '<strong>Change PIN</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=2ee930db1b59f910dbc743f1f54bcb64" width="365" height="225" /></p>
+</li>
+<li>
+<p style="padding-top: 10pt; padding-left: 10pt; text-indent: 22pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><em>Enter</em> your current <strong>PIN</strong>, then a new PIN twice. <em>Click</em> '<strong>Change PIN</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=ab1a301f1b59f910dbc743f1f54bcb7f" width="346" height="206" /></p>
+<p style="padding-top: 10pt; padding-left: 47pt; text-indent: 0pt; line-height: 105%; word-wrap: break-word; text-align: left; margin-left: auto; margin-right: auto;"><strong>Note:</strong> It is possible to use the same PIN code as your current PIV PIN. You should briefly see a message saying '<strong>Changed FIDO2 PIN</strong>'.</p>
+<p style="padding-top: 5pt; text-indent: 0pt; display: block; margin-left: auto; margin-right: auto; width: 75%;"><img src="/sys_attachment.do?sys_id=176af41f1b59f910dbc743f1f54bcb3b" width="295" height="75" /><span id="mce_16"></span></p>
+</li>
+</ol>
+</div>
